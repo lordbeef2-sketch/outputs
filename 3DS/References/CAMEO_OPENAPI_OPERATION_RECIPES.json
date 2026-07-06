@@ -1,0 +1,281 @@
+{
+  "snapshot_date": "2026-07-06",
+  "intent": "Machine-readable operation recipes for common Cameo Open API and report-time workflows.",
+  "version_scope": [
+    "Cameo 2022x Refresh2",
+    "Cameo 2024x Refresh3",
+    "Cameo 2026x Refresh1"
+  ],
+  "recipes": [
+    {
+      "name": "get_active_project",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need the currently active desktop project",
+        "Starting a read-only plugin export"
+      ],
+      "classes": [
+        "com.nomagic.magicdraw.core.Application",
+        "com.nomagic.magicdraw.core.Project"
+      ],
+      "call_chain": [
+        "Application.getInstance()",
+        "Application.getInstance().getProject()"
+      ],
+      "write_capable": false,
+      "notes": [
+        "Use this as the standard entry point for desktop-side read operations."
+      ]
+    },
+    {
+      "name": "get_projects_manager",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need to load, save, close, or enumerate projects"
+      ],
+      "classes": [
+        "com.nomagic.magicdraw.core.Application",
+        "com.nomagic.magicdraw.core.project.ProjectsManager"
+      ],
+      "call_chain": [
+        "Application.getInstance()",
+        "Application.getInstance().getProjectsManager()"
+      ],
+      "write_capable": true,
+      "notes": [
+        "This is the entry point for project lifecycle operations."
+      ]
+    },
+    {
+      "name": "load_local_project",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need to open a local .mdzip or local project file by path"
+      ],
+      "classes": [
+        "com.nomagic.magicdraw.core.project.ProjectsManager",
+        "com.nomagic.magicdraw.core.project.ProjectDescriptor",
+        "com.nomagic.magicdraw.core.project.ProjectDescriptorsFactory"
+      ],
+      "call_chain": [
+        "ProjectDescriptorsFactory.createProjectDescriptor(file.toURI())",
+        "projectsManager.loadProject(projectDescriptor, true)"
+      ],
+      "inputs": [
+        "project file path"
+      ],
+      "write_capable": true,
+      "notes": [
+        "This is a client-open operation, not a repository inventory call."
+      ]
+    },
+    {
+      "name": "load_twc_project_by_descriptor",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need to load a TWC-backed project into the desktop client"
+      ],
+      "classes": [
+        "magicdraw.teamwork.application.TeamworkUtils",
+        "com.nomagic.magicdraw.core.project.ProjectsManager"
+      ],
+      "call_chain": [
+        "TeamworkUtils.getRemoteProjectDescriptorByQualifiedName(remoteProjectQualifiedName)",
+        "projectsManager.loadProject(projectDescriptor, true)"
+      ],
+      "inputs": [
+        "remote project qualified name"
+      ],
+      "write_capable": true,
+      "notes": [
+        "Prefer TWC REST for repository inventory and admin tasks before reaching for desktop loading."
+      ]
+    },
+    {
+      "name": "create_edit_session",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need to change the model safely"
+      ],
+      "classes": [
+        "com.nomagic.magicdraw.openapi.uml.SessionManager"
+      ],
+      "call_chain": [
+        "SessionManager.getInstance().isSessionCreated(project)",
+        "SessionManager.getInstance().createSession(project, \"Edit\")",
+        "SessionManager.getInstance().closeSession(project)"
+      ],
+      "write_capable": true,
+      "notes": [
+        "Use an active session for model mutations.",
+        "Keep write scope narrow and explicit."
+      ]
+    },
+    {
+      "name": "create_model_element",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need to create UML or SysML elements"
+      ],
+      "classes": [
+        "com.nomagic.uml2.impl.ElementsFactory",
+        "com.nomagic.magicdraw.core.Project"
+      ],
+      "call_chain": [
+        "project.getElementsFactory()",
+        "elementsFactory.createClassInstance()",
+        "newElement.setOwner(targetOwner)"
+      ],
+      "write_capable": true,
+      "notes": [
+        "Requires an active session."
+      ]
+    },
+    {
+      "name": "move_or_attach_element",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need to move an element into another owner/package"
+      ],
+      "classes": [
+        "com.nomagic.magicdraw.openapi.uml.ModelElementsManager"
+      ],
+      "call_chain": [
+        "ModelElementsManager.getInstance().moveElement(element, targetOwner)"
+      ],
+      "write_capable": true,
+      "notes": [
+        "Requires an active session."
+      ]
+    },
+    {
+      "name": "resolve_profile_and_stereotype",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need stereotype-aware export or validation"
+      ],
+      "classes": [
+        "com.nomagic.uml2.ext.jmi.helpers.StereotypesHelper"
+      ],
+      "call_chain": [
+        "StereotypesHelper.getProfileByURI(project, profileUri)",
+        "StereotypesHelper.getStereotype(project, stereotypeName, profile)"
+      ],
+      "write_capable": false,
+      "notes": [
+        "Use profile URI and stereotype object references instead of loose global-name assumptions."
+      ]
+    },
+    {
+      "name": "read_or_set_tagged_values",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need tagged value extraction or controlled updates"
+      ],
+      "classes": [
+        "com.nomagic.uml2.ext.jmi.helpers.StereotypesHelper"
+      ],
+      "call_chain": [
+        "StereotypesHelper.hasStereotype(element, stereotype)",
+        "StereotypesHelper.getStereotypePropertyFirst(element, stereotype, propertyName)"
+      ],
+      "write_capable": true,
+      "notes": [
+        "Read-only extraction is the safer first use."
+      ]
+    },
+    {
+      "name": "register_browser_context_action",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need a right-click browser action in containment or related trees"
+      ],
+      "classes": [
+        "com.nomagic.magicdraw.ui.browser.actions.DefaultBrowserAction",
+        "com.nomagic.magicdraw.actions.BrowserContextAMConfigurator",
+        "com.nomagic.magicdraw.actions.ActionsConfiguratorsManager"
+      ],
+      "call_chain": [
+        "create DefaultBrowserAction subclass",
+        "create BrowserContextAMConfigurator",
+        "ActionsConfiguratorsManager.getInstance().addContainmentBrowserContextConfigurator(configurator)"
+      ],
+      "write_capable": true,
+      "notes": [
+        "Good first UI shape for scoped exports."
+      ]
+    },
+    {
+      "name": "register_diagram_context_action",
+      "surface": "Cameo Open API",
+      "use_when": [
+        "Need a right-click diagram action"
+      ],
+      "classes": [
+        "com.nomagic.magicdraw.ui.actions.DefaultDiagramAction",
+        "com.nomagic.magicdraw.actions.DiagramContextAMConfigurator",
+        "com.nomagic.magicdraw.actions.ActionsConfiguratorsManager"
+      ],
+      "call_chain": [
+        "create DefaultDiagramAction subclass",
+        "create DiagramContextAMConfigurator",
+        "register through ActionsConfiguratorsManager"
+      ],
+      "write_capable": true,
+      "notes": [
+        "Use when context depends on selected diagram elements."
+      ]
+    },
+    {
+      "name": "import_groovy_tool_for_report",
+      "surface": "Report Wizard",
+      "use_when": [
+        "Need report-time Groovy shaping instead of a full plugin"
+      ],
+      "classes": [
+        "com.nomagic.reportwizard.tools.script.GroovyTool"
+      ],
+      "call_chain": [
+        "#import ('groovy', 'com.nomagic.reportwizard.tools.script.GroovyTool')"
+      ],
+      "write_capable": false,
+      "notes": [
+        "Use eval for inline script and execute for external Groovy files."
+      ]
+    },
+    {
+      "name": "evaluate_inline_groovy",
+      "surface": "Report Wizard",
+      "use_when": [
+        "Need a small transformation in a report template"
+      ],
+      "classes": [
+        "com.nomagic.reportwizard.tools.script.GroovyTool"
+      ],
+      "call_chain": [
+        "$groovy.eval(\"return 1 + 1\")"
+      ],
+      "write_capable": false,
+      "notes": [
+        "Best for tiny report-local calculations."
+      ]
+    },
+    {
+      "name": "execute_external_groovy",
+      "surface": "Report Wizard",
+      "use_when": [
+        "Need larger report-time shaping logic in a file"
+      ],
+      "classes": [
+        "com.nomagic.reportwizard.tools.script.GroovyTool"
+      ],
+      "call_chain": [
+        "$groovy.execute('MyScript.groovy')"
+      ],
+      "write_capable": false,
+      "notes": [
+        "Prefer this when the template would become hard to read."
+      ]
+    }
+  ]
+}

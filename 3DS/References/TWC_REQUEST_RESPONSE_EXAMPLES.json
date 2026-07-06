@@ -1,0 +1,368 @@
+{
+  "snapshot_date": "2026-07-06",
+  "source_urls": {
+    "twc_rest_swagger": "https://osmc.nomagic.com/2026xR1/twc-rest-swagger-all.json",
+    "twc_simulation_swagger": "https://osmc.nomagic.com/simulation/2026xRefresh1/api-docs.json"
+  },
+  "examples": [
+    {
+      "surface": "REST",
+      "intent": "Validate REST reachability or establish authenticated session flow",
+      "method": "GET",
+      "path": "/osmc/login",
+      "tags": [
+        "Authentication"
+      ],
+      "summary": "Log in.",
+      "path_params": [],
+      "query_params": [],
+      "request_body_schema_refs": [],
+      "request_content_types": [],
+      "response_statuses": [
+        {
+          "status": "204",
+          "description": "HTTP status",
+          "content_types": null
+        }
+      ]
+    },
+    {
+      "surface": "REST",
+      "intent": "Check service health before inventory or admin operations",
+      "method": "GET",
+      "path": "/osmc/admin/health",
+      "tags": [
+        "Administrator"
+      ],
+      "summary": "The server status .",
+      "path_params": [],
+      "query_params": [],
+      "request_body_schema_refs": [],
+      "request_content_types": [],
+      "response_statuses": [
+        {
+          "status": "200",
+          "description": "A JSON object representation of  a cluster health.",
+          "content_types": "application/json"
+        }
+      ]
+    },
+    {
+      "surface": "REST",
+      "intent": "Resolve the authenticated user and optionally permission payload",
+      "method": "GET",
+      "path": "/osmc/admin/currentUser",
+      "tags": [
+        "Administrator"
+      ],
+      "summary": "Get the current user's information",
+      "path_params": [],
+      "query_params": [
+        {
+          "name": "permission",
+          "type": "boolean",
+          "required": false,
+          "description": "true or false whether to include the permission in the result",
+          "default": null
+        }
+      ],
+      "request_body_schema_refs": [],
+      "request_content_types": [],
+      "response_statuses": [
+        {
+          "status": "307",
+          "description": "Redirect to /osmc/admin/users/{username}",
+          "content_types": "application/json"
+        }
+      ]
+    },
+    {
+      "surface": "REST",
+      "intent": "Inventory users for admin or audit workflows",
+      "method": "GET",
+      "path": "/osmc/admin/users",
+      "tags": [
+        "Administrator"
+      ],
+      "summary": "List all users.",
+      "path_params": [],
+      "query_params": [
+        {
+          "name": "includeBody",
+          "type": "boolean",
+          "required": false,
+          "description": "true or false whether to include the detail of users",
+          "default": null
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "required": false,
+          "description": "user type whether <i>internal</i> or <i>external</i>",
+          "default": null
+        },
+        {
+          "name": "group",
+          "type": "boolean",
+          "required": false,
+          "description": "true or false whether to include the detail of userGroups",
+          "default": null
+        },
+        {
+          "name": "pattern",
+          "type": "string",
+          "required": false,
+          "description": "user will be found by Regular Expressions",
+          "default": null
+        },
+        {
+          "name": "modifiedDate",
+          "type": "string",
+          "required": false,
+          "description": "user will be found by Modified Date",
+          "default": null
+        }
+      ],
+      "request_body_schema_refs": [],
+      "request_content_types": [],
+      "response_statuses": [
+        {
+          "status": "200",
+          "description": "a JSON array containing user names in the server.",
+          "content_types": "application/json"
+        }
+      ]
+    },
+    {
+      "surface": "REST",
+      "intent": "List projects/resources from the repository layer",
+      "method": "GET",
+      "path": "/osmc/resources",
+      "tags": [
+        "Repository Management"
+      ],
+      "summary": "List all projects.",
+      "path_params": [],
+      "query_params": [
+        {
+          "name": "includeBody",
+          "type": "boolean",
+          "required": false,
+          "description": "true or false whether to include the detail of projects",
+          "default": null
+        },
+        {
+          "name": "includeRemovedResource",
+          "type": "boolean",
+          "required": false,
+          "description": "true or false whether to include the removed projects",
+          "default": null
+        },
+        {
+          "name": "modifiedDate",
+          "type": "int",
+          "required": false,
+          "description": "Displays projects modified or created after the specified timestamp.",
+          "default": null
+        }
+      ],
+      "request_body_schema_refs": [],
+      "request_content_types": [],
+      "response_statuses": [
+        {
+          "status": "200",
+          "description": "an LDP direct container containing information about a list of projects",
+          "content_types": "application/ld+json"
+        }
+      ]
+    },
+    {
+      "surface": "REST",
+      "intent": "Enumerate branches inside a repository resource",
+      "method": "GET",
+      "path": "/osmc/resources/{resourceId}/branches",
+      "tags": [
+        "Repository Management"
+      ],
+      "summary": "List branches in the resource.",
+      "path_params": [
+        {
+          "name": "resourceId",
+          "type": "string",
+          "description": "the UUID of the resource"
+        }
+      ],
+      "query_params": [],
+      "request_body_schema_refs": [],
+      "request_content_types": [],
+      "response_statuses": [
+        {
+          "status": "200",
+          "description": "an LDP basic container containing branches in the resource.",
+          "content_types": "application/ld+json"
+        }
+      ]
+    },
+    {
+      "surface": "REST",
+      "intent": "Read a specific stereotype tag value from a branch element",
+      "method": "GET",
+      "path": "/osmc/resources/{resourceId}/branches/{branchId}/elements/{elementId}/stereotypes/{stereotypeId}/tags/{tagName}",
+      "tags": [
+        "MD Resources"
+      ],
+      "summary": "Get information about stereotype applied to element of the specified branch latest revision in MD Resource.",
+      "path_params": [],
+      "query_params": [],
+      "request_body_schema_refs": [],
+      "request_content_types": [],
+      "response_statuses": [
+        {
+          "status": "200",
+          "description": "An LDP RDF resource containing information about tag.",
+          "content_types": "application/ld+json"
+        }
+      ]
+    },
+    {
+      "surface": "Simulation REST API",
+      "intent": "List projects visible to the simulation service",
+      "method": "GET",
+      "path": "/projects",
+      "tags": [
+        "Simulation"
+      ],
+      "summary": "Get the list of Teamwork Cloud projects.",
+      "path_params": [],
+      "query_params": [],
+      "request_body_schema_refs": [],
+      "request_content_types": [],
+      "response_statuses": [
+        {
+          "status": "200",
+          "description": "OK",
+          "content_types": "application/json"
+        }
+      ]
+    },
+    {
+      "surface": "Simulation REST API",
+      "intent": "Run a simulation configuration against a project",
+      "method": "POST",
+      "path": "/run/project/{project}/config/{config}",
+      "tags": [
+        "Simulation"
+      ],
+      "summary": "Run the execution of a specified Simulation Configuration in a particular project.",
+      "path_params": [
+        {
+          "name": "project",
+          "type": "string",
+          "description": "Specify the name or the ID of a project."
+        },
+        {
+          "name": "config",
+          "type": "string",
+          "description": "Specify the name or the ID of a Simulation Configuration."
+        }
+      ],
+      "query_params": [
+        {
+          "name": "commitResults",
+          "type": "boolean",
+          "required": false,
+          "description": "Select whether or not to commit a new project version with the simulation results.",
+          "default": false
+        },
+        {
+          "name": "verification",
+          "type": "string",
+          "required": false,
+          "description": "Select the verification results to display.",
+          "default": "FAIL"
+        },
+        {
+          "name": "startedFrom",
+          "type": "string",
+          "required": false,
+          "description": "An internal parameter to provide information about the starting location of the simulation. The specified text will be visible in the response of the status endpoint.",
+          "default": null
+        },
+        {
+          "name": "timeout",
+          "type": "integer",
+          "required": false,
+          "description": "Specify the timeout duration in minutes.",
+          "default": 0
+        }
+      ],
+      "request_body_schema_refs": [
+        "#/components/schemas/RunSimulationData"
+      ],
+      "request_content_types": [
+        "application/json"
+      ],
+      "response_statuses": [
+        {
+          "status": "200",
+          "description": "OK",
+          "content_types": "application/json"
+        }
+      ]
+    },
+    {
+      "surface": "Simulation REST API",
+      "intent": "Poll simulation execution status",
+      "method": "GET",
+      "path": "/status/{simulationId}",
+      "tags": [
+        "Simulation"
+      ],
+      "summary": "Get the status of the specified simulation.",
+      "path_params": [
+        {
+          "name": "simulationId",
+          "type": "string",
+          "description": "Specify the ID of a simulation."
+        }
+      ],
+      "query_params": [],
+      "request_body_schema_refs": [],
+      "request_content_types": [],
+      "response_statuses": [
+        {
+          "status": "200",
+          "description": "OK",
+          "content_types": "application/json"
+        }
+      ]
+    },
+    {
+      "surface": "Simulation REST API",
+      "intent": "Fetch final simulation results",
+      "method": "GET",
+      "path": "/result/{simulationId}",
+      "tags": [
+        "Simulation"
+      ],
+      "summary": "Get the results of the specified simulation.",
+      "path_params": [
+        {
+          "name": "simulationId",
+          "type": "string",
+          "description": "Specify the ID of a simulation."
+        }
+      ],
+      "query_params": [],
+      "request_body_schema_refs": [],
+      "request_content_types": [],
+      "response_statuses": [
+        {
+          "status": "200",
+          "description": "OK",
+          "content_types": "application/json"
+        }
+      ]
+    }
+  ]
+}

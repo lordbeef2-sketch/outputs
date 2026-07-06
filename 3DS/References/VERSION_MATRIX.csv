@@ -1,0 +1,12 @@
+topic,product_or_standard,latest_verified,release_or_status_date,notes
+Cameo 2022x,Cameo Systems Modeler,2022x Refresh2,2023-07-07,"Base 2022x released 2022-07-01; page also shows hot fixes"
+Cameo 2024x,Cameo Systems Modeler,2024x Refresh3,2025-07-11,"Simulation, FMU, and collaboration enhancements"
+Cameo 2026x,Magic Cyber Systems Engineer / Cameo Systems Modeler,2026x Refresh1,2026-06-26,"SysML v1 modeling, simulation, and collaboration improvements"
+TWC 2022x,Teamwork Cloud and Services,2022x Refresh2,2023-07-07,"Element-level webhooks and security/resource-sync improvements"
+TWC 2024x,Teamwork Cloud and Services,2024x Refresh3,2025-07-11,"Admin/SAML/licensing UX improvements"
+TWC 2026x,Magic Collaboration Studio / Teamwork Cloud and Services,2026x Refresh1,2026-06-26,"MagicLab Collaborator and SysML v2 resource/API improvements"
+SysML v1,OMG SysML,1.7,2024-06,"Latest minor revision of SysML 1.x per SysML.org index"
+SysML v2,OMG SysML,2.0,2025-06-30,"Formal adoption referenced by SysML v2 release repo; editorial updates in 2026-03"
+Python 3.11,Python,3.11.15,2026-03-03,"Security release for the legacy 3.11 series"
+PowerShell,Microsoft PowerShell,7.5.8 stable / 7.4.17 LTS / 7.6.3 next LTS,2026-07-06 snapshot,"From Microsoft Learn install page"
+Java,Oracle Java SE,JDK 26 latest / JDK 25 LTS,2026-07-06 snapshot,"Use vendor-supported Java for Cameo/TWC compatibility decisions"

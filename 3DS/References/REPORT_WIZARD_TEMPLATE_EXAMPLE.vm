@@ -1,0 +1,14 @@
+## Simple Report Wizard / Velocity pattern
+
+#set($elements = $project.getPrimaryModel().ownedElement)
+
+Project: $project.name
+
+#foreach($element in $elements)
+- $element.humanName
+#end
+
+## Notes
+- In real use, replace broad traversal with a tighter scope.
+- Pair this with helper modules and explicit sorting/filtering.
+- Prefer stable exported schemas over raw free-form report output for machine pipelines.

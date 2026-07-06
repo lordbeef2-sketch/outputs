@@ -1,0 +1,9 @@
+interface_id,interface_name,source_system,source_element,source_connector,source_pin,dest_system,dest_element,dest_connector,dest_pin,signal_name,signal_type,direction,protocol_layer,electrical_limits,wire_color_or_id,shield_drain,revision,source_doc_ref,notes
+IF-001,Vehicle Power Interface,Power Dist Unit,,J1,A1,Flight Computer,,P1,1,28V_MAIN,power,source-to-dest,,28VDC,,,A,EICD-001,Primary switched power
+IF-001,Vehicle Power Interface,Power Dist Unit,,J1,A2,Flight Computer,,P1,2,PWR_RTN,ground,source-to-dest,,0V,,,A,EICD-001,Power return
+IF-002,Command Link,Flight Computer,,P2,7,Radio,,J5,14,UART_TX,serial,source-to-dest,UART,3.3V,,,A,EICD-001,FC transmits to radio
+IF-002,Command Link,Flight Computer,,P2,8,Radio,,J5,15,UART_RX,serial,dest-to-source,UART,3.3V,,,A,EICD-001,FC receives from radio
+IF-002,Command Link,Flight Computer,,P2,9,Radio,,J5,16,UART_GND,ground,n/a,UART,0V,,,A,EICD-001,Signal reference
+IF-003,Payload Trigger,Flight Computer,,P3,C4,Payload Controller,,J2,B9,TRIG_DISCRETE,discrete,source-to-dest,,5V,,,A,EICD-001,Active high discrete trigger
+IF-004,Ethernet Backbone,Flight Computer,,P4,11,Switch,,J8,21,ETH0_P,data,bidirectional,1000BASE-T,1000BASE-T,,,A,EICD-001,Expanded from packed differential pair row
+IF-004,Ethernet Backbone,Flight Computer,,P4,12,Switch,,J8,22,ETH0_N,data,bidirectional,1000BASE-T,1000BASE-T,,,A,EICD-001,Expanded from packed differential pair row

@@ -1,0 +1,17 @@
+{
+  "signal_aliases": {
+    "PWR_RTN": "POWER_RETURN",
+    "28V_MAIN": "28V_MAIN_BUS",
+    "UART_TX": "SERIAL_TX",
+    "UART_RX": "SERIAL_RX"
+  },
+  "connector_aliases": {
+    "J1": "PDU_J1",
+    "P1": "FC_P1",
+    "J5": "RADIO_J5"
+  },
+  "system_aliases": {
+    "FC": "Flight Computer",
+    "PDU": "Power Dist Unit"
+  }
+}

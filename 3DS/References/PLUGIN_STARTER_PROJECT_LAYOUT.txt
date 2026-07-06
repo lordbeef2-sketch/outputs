@@ -1,0 +1,26 @@
+plugin-starter/
+  README.md
+  build.gradle or pom.xml
+  src/
+    main/
+      java/
+        example/
+          ExamplePlugin.java
+      resources/
+        plugin.xml
+        icons/
+  libs/
+    optional third-party jars if policy allows
+  docs/
+    supported-versions.md
+    deployment.md
+    rollback.md
+  samples/
+    expected-output.csv
+
+Recommended minimum docs:
+- supported Cameo line(s)
+- supported Java line
+- whether the plugin is read-only or write-capable
+- deployment steps
+- removal/rollback steps

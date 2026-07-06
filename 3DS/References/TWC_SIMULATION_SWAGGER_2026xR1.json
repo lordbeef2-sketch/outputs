@@ -1,0 +1,2680 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "description": "Simulation Toolkit REST API\u003Cbr\u003E\u003Ca href=\"https://docs.nomagic.com/display/CST2026xR1/Server-side+simulation#Serversidesimulation\" target=\"_blank\"\u003Ehttps://docs.nomagic.com/display/CST2026xR1/Server-side+simulation#Serversidesimulation\u003C/a\u003E",
+    "title": "Simulation Toolkit REST API",
+    "version": "2026x Refresh1"
+  },
+  "servers": [
+    {
+      "url": "/simulation/api",
+      "description": ""
+    }
+  ],
+  "paths": {
+    "/configs/project/{project}": {
+      "get": {
+        "operationId": "getConfigurations_3",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Filter Simulation Configurations with UI Components",
+            "in": "query",
+            "name": "filter",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "UI"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConfigurationInfo"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get information about the Simulation Configurations for a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/configs/project/{project}/branch/{branch}": {
+      "get": {
+        "operationId": "getConfigurations_1",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a branch.",
+            "in": "path",
+            "name": "branch",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Filter Simulation Configurations with UI Components",
+            "in": "query",
+            "name": "filter",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "UI"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConfigurationInfo"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get information about the Simulation Configurations for a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/configs/project/{project}/branch/{branch}/element/{element}": {
+      "get": {
+        "operationId": "getConfigurations_4",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a branch.",
+            "in": "path",
+            "name": "branch",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the qualified name or the ID of an element.",
+            "in": "path",
+            "name": "element",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Filter Simulation Configurations with UI Components",
+            "in": "query",
+            "name": "filter",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "UI"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConfigurationInfo"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get information about the Simulation Configurations for a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/configs/project/{project}/element/{element}": {
+      "get": {
+        "operationId": "getConfigurations_5",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the qualified name or the ID of an element.",
+            "in": "path",
+            "name": "element",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Filter Simulation Configurations with UI Components",
+            "in": "query",
+            "name": "filter",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "UI"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConfigurationInfo"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get information about the Simulation Configurations for a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/configs/project/{project}/version/{version}": {
+      "get": {
+        "operationId": "getConfigurations",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the version number of a project.",
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "description": "Filter Simulation Configurations with UI Components",
+            "in": "query",
+            "name": "filter",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "UI"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConfigurationInfo"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get information about the Simulation Configurations for a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/configs/project/{project}/version/{version}/element/{element}": {
+      "get": {
+        "operationId": "getConfigurations_2",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the version number of a project.",
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "description": "Specify the qualified name or the ID of an element.",
+            "in": "path",
+            "name": "element",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Filter Simulation Configurations with UI Components",
+            "in": "query",
+            "name": "filter",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "UI"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConfigurationInfo"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get information about the Simulation Configurations for a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/descriptor/project/{project}/branch/{branch}/config/{config}": {
+      "get": {
+        "operationId": "getDescriptor_2",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a branch.",
+            "in": "path",
+            "name": "branch",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a Simulation Configuration.",
+            "in": "path",
+            "name": "config",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DescriptorResponse"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get information about the execution target for a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/descriptor/project/{project}/config/{config}": {
+      "get": {
+        "operationId": "getDescriptor_1",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a Simulation Configuration.",
+            "in": "path",
+            "name": "config",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DescriptorResponse"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get information about the execution target for a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/descriptor/project/{project}/version/{version}/config/{config}": {
+      "get": {
+        "operationId": "getDescriptor",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the version number of a project.",
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a Simulation Configuration.",
+            "in": "path",
+            "name": "config",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DescriptorResponse"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get information about the execution target for a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/get/{simulationId}": {
+      "post": {
+        "operationId": "getVariables",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariablesName"
+              }
+            }
+          },
+          "description": "Specify the names of simulation variables to retrieve current values for. If no variables are specified, the values of all simulation variables are returned."
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VariablesResult"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get the value(s) of one or more simulation variables.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/hasConfigs/project/{project}": {
+      "get": {
+        "operationId": "hasConfigurations_2",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HasConfigurationsResponse"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Check if a particular project has any Simulation Configurations.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/hasConfigs/project/{project}/branch/{branch}": {
+      "get": {
+        "operationId": "hasConfigurations_1",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a branch.",
+            "in": "path",
+            "name": "branch",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HasConfigurationsResponse"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Check if a particular project has any Simulation Configurations.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/hasConfigs/project/{project}/version/{version}": {
+      "get": {
+        "operationId": "hasConfigurations",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the version number of a project.",
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HasConfigurationsResponse"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Check if a particular project has any Simulation Configurations.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/pause/{simulationId}": {
+      "post": {
+        "operationId": "pauseSimulation",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "Pause the execution of the specified simulation.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/projects": {
+      "get": {
+        "operationId": "getProjects",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectInfo"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get the list of Teamwork Cloud projects.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/result/{simulationId}": {
+      "get": {
+        "operationId": "getSimulationResult",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get the results of the specified simulation.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/resume/{simulationId}": {
+      "post": {
+        "operationId": "resumeSimulation",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "Resume the execution of the specified simulation.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/run/project/{project}/branch/{branch}/config/{config}": {
+      "post": {
+        "operationId": "runSimulation",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a branch.",
+            "in": "path",
+            "name": "branch",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a Simulation Configuration.",
+            "in": "path",
+            "name": "config",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Select whether or not to commit a new project version with the simulation results.",
+            "in": "query",
+            "name": "commitResults",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "description": "Select the verification results to display.",
+            "in": "query",
+            "name": "verification",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "FAIL",
+              "enum": [
+                "ALL",
+                "NONE",
+                "FAIL"
+              ]
+            }
+          },
+          {
+            "description": "An internal parameter to provide information about the starting location of the simulation. The specified text will be visible in the response of the status endpoint.",
+            "in": "query",
+            "name": "startedFrom",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the timeout duration in minutes.",
+            "in": "query",
+            "name": "timeout",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RunSimulationData"
+              }
+            }
+          },
+          "description": "Specify a set of simulation options with values that will override the initial simulation options. \u003C/br\u003E\nSpecify a set of input parameters with values to be provided for the simulation. \u003C/br\u003E\nSpecify a set of output parameters to be obtained after the simulation. If no output parameters are specified, all initialized values are returned.\n"
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Run the execution of a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/run/project/{project}/branch/{branch}/element/{element}": {
+      "post": {
+        "operationId": "runSimulation_8",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a branch.",
+            "in": "path",
+            "name": "branch",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the qualified name or the ID of an element.",
+            "in": "path",
+            "name": "element",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Select whether or not to commit a new project version with the simulation results.",
+            "in": "query",
+            "name": "commitResults",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "description": "Select the verification results to display.",
+            "in": "query",
+            "name": "verification",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "FAIL",
+              "enum": [
+                "ALL",
+                "NONE",
+                "FAIL"
+              ]
+            }
+          },
+          {
+            "description": "An internal parameter to provide information about the starting location of the simulation. The specified text will be visible in the response of the status endpoint.",
+            "in": "query",
+            "name": "startedFrom",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the timeout duration in minutes.",
+            "in": "query",
+            "name": "timeout",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RunSimulationData"
+              }
+            }
+          },
+          "description": "Specify a set of simulation options with values that will override the initial simulation options. \u003C/br\u003E\nSpecify a set of input parameters with values to be provided for the simulation. \u003C/br\u003E\nSpecify a set of output parameters to be obtained after the simulation. If no output parameters are specified, all initialized values are returned.\n"
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Run the execution of a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/run/project/{project}/branch/{branch}/element/{element}/config/{config}": {
+      "post": {
+        "operationId": "runSimulation_6",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a branch.",
+            "in": "path",
+            "name": "branch",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the qualified name or the ID of an element.",
+            "in": "path",
+            "name": "element",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a Simulation Configuration.",
+            "in": "path",
+            "name": "config",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Select whether or not to commit a new project version with the simulation results.",
+            "in": "query",
+            "name": "commitResults",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "description": "Select the verification results to display.",
+            "in": "query",
+            "name": "verification",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "FAIL",
+              "enum": [
+                "ALL",
+                "NONE",
+                "FAIL"
+              ]
+            }
+          },
+          {
+            "description": "An internal parameter to provide information about the starting location of the simulation. The specified text will be visible in the response of the status endpoint.",
+            "in": "query",
+            "name": "startedFrom",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the timeout duration in minutes.",
+            "in": "query",
+            "name": "timeout",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RunSimulationData"
+              }
+            }
+          },
+          "description": "Specify a set of simulation options with values that will override the initial simulation options. \u003C/br\u003E\nSpecify a set of input parameters with values to be provided for the simulation. \u003C/br\u003E\nSpecify a set of output parameters to be obtained after the simulation. If no output parameters are specified, all initialized values are returned.\n"
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Run the execution of a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/run/project/{project}/config/{config}": {
+      "post": {
+        "operationId": "runSimulation_7",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a Simulation Configuration.",
+            "in": "path",
+            "name": "config",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Select whether or not to commit a new project version with the simulation results.",
+            "in": "query",
+            "name": "commitResults",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "description": "Select the verification results to display.",
+            "in": "query",
+            "name": "verification",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "FAIL",
+              "enum": [
+                "ALL",
+                "NONE",
+                "FAIL"
+              ]
+            }
+          },
+          {
+            "description": "An internal parameter to provide information about the starting location of the simulation. The specified text will be visible in the response of the status endpoint.",
+            "in": "query",
+            "name": "startedFrom",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the timeout duration in minutes.",
+            "in": "query",
+            "name": "timeout",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RunSimulationData"
+              }
+            }
+          },
+          "description": "Specify a set of simulation options with values that will override the initial simulation options. \u003C/br\u003E\nSpecify a set of input parameters with values to be provided for the simulation. \u003C/br\u003E\nSpecify a set of output parameters to be obtained after the simulation. If no output parameters are specified, all initialized values are returned.\n"
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Run the execution of a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/run/project/{project}/element/{element}": {
+      "post": {
+        "operationId": "runSimulation_1",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the qualified name or the ID of an element.",
+            "in": "path",
+            "name": "element",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Select whether or not to commit a new project version with the simulation results.",
+            "in": "query",
+            "name": "commitResults",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "description": "Select the verification results to display.",
+            "in": "query",
+            "name": "verification",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "FAIL",
+              "enum": [
+                "ALL",
+                "NONE",
+                "FAIL"
+              ]
+            }
+          },
+          {
+            "description": "An internal parameter to provide information about the starting location of the simulation. The specified text will be visible in the response of the status endpoint.",
+            "in": "query",
+            "name": "startedFrom",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the timeout duration in minutes.",
+            "in": "query",
+            "name": "timeout",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RunSimulationData"
+              }
+            }
+          },
+          "description": "Specify a set of simulation options with values that will override the initial simulation options. \u003C/br\u003E\nSpecify a set of input parameters with values to be provided for the simulation. \u003C/br\u003E\nSpecify a set of output parameters to be obtained after the simulation. If no output parameters are specified, all initialized values are returned.\n"
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Run the execution of a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/run/project/{project}/element/{element}/config/{config}": {
+      "post": {
+        "operationId": "runSimulation_2",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the qualified name or the ID of an element.",
+            "in": "path",
+            "name": "element",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a Simulation Configuration.",
+            "in": "path",
+            "name": "config",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Select whether or not to commit a new project version with the simulation results.",
+            "in": "query",
+            "name": "commitResults",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "description": "Select the verification results to display.",
+            "in": "query",
+            "name": "verification",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "FAIL",
+              "enum": [
+                "ALL",
+                "NONE",
+                "FAIL"
+              ]
+            }
+          },
+          {
+            "description": "An internal parameter to provide information about the starting location of the simulation. The specified text will be visible in the response of the status endpoint.",
+            "in": "query",
+            "name": "startedFrom",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the timeout duration in minutes.",
+            "in": "query",
+            "name": "timeout",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RunSimulationData"
+              }
+            }
+          },
+          "description": "Specify a set of simulation options with values that will override the initial simulation options. \u003C/br\u003E\nSpecify a set of input parameters with values to be provided for the simulation. \u003C/br\u003E\nSpecify a set of output parameters to be obtained after the simulation. If no output parameters are specified, all initialized values are returned.\n"
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Run the execution of a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/run/project/{project}/version/{version}/config/{config}": {
+      "post": {
+        "operationId": "runSimulation_3",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the version number of a project.",
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a Simulation Configuration.",
+            "in": "path",
+            "name": "config",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Select whether or not to commit a new project version with the simulation results.",
+            "in": "query",
+            "name": "commitResults",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "description": "Select the verification results to display.",
+            "in": "query",
+            "name": "verification",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "FAIL",
+              "enum": [
+                "ALL",
+                "NONE",
+                "FAIL"
+              ]
+            }
+          },
+          {
+            "description": "An internal parameter to provide information about the starting location of the simulation. The specified text will be visible in the response of the status endpoint.",
+            "in": "query",
+            "name": "startedFrom",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the timeout duration in minutes.",
+            "in": "query",
+            "name": "timeout",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RunSimulationData"
+              }
+            }
+          },
+          "description": "Specify a set of simulation options with values that will override the initial simulation options. \u003C/br\u003E\nSpecify a set of input parameters with values to be provided for the simulation. \u003C/br\u003E\nSpecify a set of output parameters to be obtained after the simulation. If no output parameters are specified, all initialized values are returned.\n"
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Run the execution of a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/run/project/{project}/version/{version}/element/{element}": {
+      "post": {
+        "operationId": "runSimulation_4",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the version number of a project.",
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "description": "Specify the qualified name or the ID of an element.",
+            "in": "path",
+            "name": "element",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Select whether or not to commit a new project version with the simulation results.",
+            "in": "query",
+            "name": "commitResults",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "description": "Select the verification results to display.",
+            "in": "query",
+            "name": "verification",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "FAIL",
+              "enum": [
+                "ALL",
+                "NONE",
+                "FAIL"
+              ]
+            }
+          },
+          {
+            "description": "An internal parameter to provide information about the starting location of the simulation. The specified text will be visible in the response of the status endpoint.",
+            "in": "query",
+            "name": "startedFrom",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the timeout duration in minutes.",
+            "in": "query",
+            "name": "timeout",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RunSimulationData"
+              }
+            }
+          },
+          "description": "Specify a set of simulation options with values that will override the initial simulation options. \u003C/br\u003E\nSpecify a set of input parameters with values to be provided for the simulation. \u003C/br\u003E\nSpecify a set of output parameters to be obtained after the simulation. If no output parameters are specified, all initialized values are returned.\n"
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Run the execution of a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/run/project/{project}/version/{version}/element/{element}/config/{config}": {
+      "post": {
+        "operationId": "runSimulation_5",
+        "parameters": [
+          {
+            "description": "Specify the name or the ID of a project.",
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the version number of a project.",
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "description": "Specify the qualified name or the ID of an element.",
+            "in": "path",
+            "name": "element",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the name or the ID of a Simulation Configuration.",
+            "in": "path",
+            "name": "config",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Select whether or not to commit a new project version with the simulation results.",
+            "in": "query",
+            "name": "commitResults",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          {
+            "description": "Select the verification results to display.",
+            "in": "query",
+            "name": "verification",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "FAIL",
+              "enum": [
+                "ALL",
+                "NONE",
+                "FAIL"
+              ]
+            }
+          },
+          {
+            "description": "An internal parameter to provide information about the starting location of the simulation. The specified text will be visible in the response of the status endpoint.",
+            "in": "query",
+            "name": "startedFrom",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the timeout duration in minutes.",
+            "in": "query",
+            "name": "timeout",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RunSimulationData"
+              }
+            }
+          },
+          "description": "Specify a set of simulation options with values that will override the initial simulation options. \u003C/br\u003E\nSpecify a set of input parameters with values to be provided for the simulation. \u003C/br\u003E\nSpecify a set of output parameters to be obtained after the simulation. If no output parameters are specified, all initialized values are returned.\n"
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Run the execution of a specified Simulation Configuration in a particular project.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/running": {
+      "get": {
+        "operationId": "getRunningSimulations",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RunningResponse"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get the list of all currently running simulations including queued simulations that are placed in a waiting line.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/set/{simulationId}": {
+      "post": {
+        "operationId": "setVariables",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VariablesValues"
+              }
+            }
+          },
+          "description": "Specify the name-value map of simulation variables to set for the current simulation. \u003C/br\u003E\nvariables (mandatory) - Specify the name-value map of simulation variables \u003C/br\u003E\ncontext (optional) - Specify the ID of a target context. \u003C/br\u003E\npropertyPath (optional) - Specify the property path of a target.\n",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "Set the value(s) for one or more simulation variables.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/signal/{simulationId}": {
+      "post": {
+        "operationId": "sendSignal",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SignalData"
+              }
+            }
+          },
+          "description": "Specify a signal name or ID, a target name, a context ID, and a set of signal parameters with values. \u003C/br\u003E\nsignalName (mandatory) - Specify the name of a signal. \u003C/br\u003E\nsignalId (optional) - Specify element ID of the signal. Locating signal by ID is faster than by name. \u003C/br\u003E\ntarget (optional) - Specify the name of a target. \u003C/br\u003E\ncontext (optional) - Specify the ID of a target context. \u003C/br\u003E\nparameters (optional) - Specify a set of signal parameters with values.\n",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "Send a signal to the specified simulation.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/start/{simulationId}": {
+      "post": {
+        "operationId": "startSimulation",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the timeout duration in minutes.",
+            "in": "query",
+            "name": "timeout",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "default": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Start the execution of the specified simulation.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/status/{simulationId}": {
+      "get": {
+        "operationId": "getSimulationStatus",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Status"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get the status of the specified simulation.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/step/{simulationId}": {
+      "post": {
+        "operationId": "step",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "Perform a single time step of the specified simulation.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/terminate/{simulationId}": {
+      "post": {
+        "operationId": "terminateSimulation",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "Terminate the specified simulation.",
+        "tags": [
+          "Simulation"
+        ]
+      }
+    },
+    "/ui/index/{simulationId}": {
+      "get": {
+        "operationId": "openIndexWithUI",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the full name of UI, e.g. CoffeeMachine.html",
+            "in": "query",
+            "name": "pages",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Open the UI index window of the specified simulation.",
+        "tags": [
+          "Simulation UI"
+        ]
+      }
+    },
+    "/ui/{simulationId}": {
+      "get": {
+        "operationId": "redirectToUI",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "Open the UI of the specified simulation.",
+        "tags": [
+          "Simulation UI"
+        ]
+      }
+    },
+    "/ui/{simulationId}/{uiName}": {
+      "get": {
+        "operationId": "redirectToUI_1",
+        "parameters": [
+          {
+            "description": "Specify the ID of a simulation.",
+            "in": "path",
+            "name": "simulationId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Specify the full name of UI, e.g. CoffeeMachine.html",
+            "in": "path",
+            "name": "uiName",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "Open the UI of the specified simulation.",
+        "tags": [
+          "Simulation UI"
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ConfigurationInfo": {
+        "type": "object",
+        "properties": {
+          "availableUI": {
+            "type": "boolean"
+          },
+          "description": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "ConstraintResult": {
+        "type": "object",
+        "properties": {
+          "constraint": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "DescriptorResponse": {
+        "type": "object",
+        "properties": {
+          "config": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          },
+          "parameters": {
+            "$ref": "#/components/schemas/ParametersResponse"
+          },
+          "timeStep": {
+            "type": "string"
+          }
+        }
+      },
+      "HasConfigurationsResponse": {
+        "type": "object",
+        "properties": {
+          "hasConfigs": {
+            "type": "boolean"
+          }
+        }
+      },
+      "NumberOfRuns": {
+        "type": "object",
+        "properties": {
+          "executing": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "total": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "ParameterExtension": {
+        "type": "object",
+        "properties": {
+          "attributes": {
+            "type": "object",
+            "additionalProperties": {
+
+            }
+          },
+          "stereotype": {
+            "type": "string"
+          }
+        }
+      },
+      "ParameterRequirement": {
+        "type": "object",
+        "properties": {
+          "constraint": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "lowerBound": {
+            "type": "number"
+          },
+          "lowerBoundClosed": {
+            "type": "number"
+          },
+          "text": {
+            "type": "string"
+          },
+          "upperBound": {
+            "type": "number"
+          },
+          "upperBoundClosed": {
+            "type": "number"
+          }
+        }
+      },
+      "ParameterResponse": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "extensions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ParameterExtension"
+            }
+          },
+          "parameter": {
+            "type": "string"
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ParameterRequirement"
+            }
+          },
+          "type": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "value": {
+
+          }
+        }
+      },
+      "ParametersResponse": {
+        "type": "object",
+        "properties": {
+          "inputs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ParameterResponse"
+            }
+          },
+          "outputs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ParameterResponse"
+            }
+          }
+        }
+      },
+      "ProjectInfo": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "RequirementResult": {
+        "type": "object",
+        "properties": {
+          "constraint": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "margin": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Result": {
+        "type": "object",
+        "properties": {
+          "activityTimelines": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "csvExports": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "outputs": {
+            "type": "object",
+            "additionalProperties": {
+
+            }
+          },
+          "stateTimelines": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "timeSeries": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "verification": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VerificationResult"
+            }
+          }
+        }
+      },
+      "RunSimulationData": {
+        "type": "object",
+        "properties": {
+          "inputs": {
+            "type": "object",
+            "additionalProperties": {
+
+            }
+          },
+          "outputs": {
+            "type": "array",
+            "example": [],
+            "items": {
+              "type": "string"
+            }
+          },
+          "simconfig": {
+            "type": "object",
+            "additionalProperties": {
+
+            },
+            "properties": {
+              "ALLOW_CONCURRENT_ALLOCATED_ACTIVITIES": {
+                "type": "boolean",
+                "default": true
+              },
+              "ANIMATION_SPEED": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "AUTOMATIC_PARAMETRIC_RECALCULATION": {
+                "type": "boolean",
+                "default": true
+              },
+              "AUTO_CONVERT_UNITS": {
+                "type": "boolean",
+                "default": true
+              },
+              "AUTO_CREATE_FUML_OBJECT_OF_OUTPUT_PIN": {
+                "type": "boolean",
+                "default": true
+              },
+              "AUTO_START": {
+                "type": "boolean"
+              },
+              "AUTO_START_ACTIVE_OPTIONS": {
+                "type": "boolean",
+                "default": true
+              },
+              "AUTO_TERMINATE": {
+                "type": "boolean"
+              },
+              "CAPTURE_TIMESTAMP": {
+                "type": "boolean",
+                "default": true
+              },
+              "CLOCK_RATIO": {
+                "type": "number",
+                "format": "double",
+                "default": 1
+              },
+              "CLONE_REFERENCES": {
+                "type": "boolean"
+              },
+              "COMPLETION_EVENTS_AND_TRANSITIONS": {
+                "type": "boolean",
+                "default": true
+              },
+              "CONSTRAINT_FAILURE_AS_BREAKPOINT": {
+                "type": "boolean"
+              },
+              "DECIMAL_PLACES": {
+                "type": "integer",
+                "format": "int32",
+                "default": 4
+              },
+              "DEFAULT_LANGUAGE": {
+                "type": "string",
+                "default": "JavaScript Rhino"
+              },
+              "DURATION_SIMULATION_MODE": {
+                "type": "string",
+                "default": "MIN",
+                "enum": [
+                  "MIN",
+                  "MAX",
+                  "AVERAGE",
+                  "RANDOM"
+                ]
+              },
+              "ENDTIME": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "ENGINES_PRIORITY": {
+                "type": "string",
+                "default": "[on] fUML Engine\n[on] Interaction Engine\n[on] SCXML Engine"
+              },
+              "INITIALIZE_NUMERICAL_VALUE": {
+                "type": "boolean",
+                "default": false
+              },
+              "INITIALIZE_REFERENCES": {
+                "type": "boolean"
+              },
+              "NUMBER_OF_RUNS": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "NUMBER_OF_STEPS": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "PASS_CALLER_CONTEXT": {
+                "type": "boolean",
+                "default": true
+              },
+              "RECORD_TIMESTAMP": {
+                "type": "boolean",
+                "default": false
+              },
+              "REMEMBER_FAILURE_STATUS": {
+                "type": "boolean"
+              },
+              "RESULT_LOCATION": {
+                "type": "string",
+                "default": "Results"
+              },
+              "RUN_FORKS_IN_PARALLEL": {
+                "type": "boolean",
+                "default": true
+              },
+              "SHOW_ANNOTATIONS": {
+                "type": "boolean",
+                "default": true
+              },
+              "SHOW_UNITS": {
+                "type": "boolean"
+              },
+              "SOLVE_AFTER_INITIALIZATION": {
+                "type": "boolean",
+                "default": true
+              },
+              "START_TIME": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "STATE_ACTIVATION_SEMANTICS": {
+                "type": "string",
+                "default": "BEFORE_ENTRY",
+                "enum": [
+                  "BEFORE_ENTRY",
+                  "AFTER_ENTRY"
+                ]
+              },
+              "STEP_DELAY": {
+                "type": "number",
+                "format": "double"
+              },
+              "STEP_SIZE": {
+                "type": "number",
+                "format": "double"
+              },
+              "TERMINATE_BEHAVIOR_ON_EXCEPTION_THROWN": {
+                "type": "boolean",
+                "default": true
+              },
+              "TERMINATE_NESTED_BEHAVIORS": {
+                "type": "boolean",
+                "default": true
+              },
+              "TERMINATE_STREAMING_BEHAVIORS_BY_OUTPUT_PARAMETER_MULTIPLICITY": {
+                "type": "boolean",
+                "default": false
+              },
+              "TIME_UNIT": {
+                "type": "string",
+                "default": "MILLISECOND",
+                "enum": [
+                  "NANOSECOND",
+                  "MICROSECOND",
+                  "MILLISECOND",
+                  "SECOND",
+                  "MINUTE",
+                  "HOUR",
+                  "DAY",
+                  "WEEK",
+                  "MONTH",
+                  "YEAR"
+                ]
+              },
+              "TIME_VALUE": {
+                "type": "string",
+                "default": "Model-based Clock Test::Clock::time"
+              },
+              "TIME_VARIABLE_NAME": {
+                "type": "string",
+                "default": "simtime"
+              },
+              "TREAT_ALL_CLASSIFIERS_AS_ACTIVE": {
+                "type": "boolean",
+                "default": true
+              },
+              "USE_FUML_DECISION_SEMANTICS": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          }
+        }
+      },
+      "RunningResponse": {
+        "type": "object",
+        "properties": {
+          "queued": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "running": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "SignalData": {
+        "type": "object",
+        "properties": {
+          "context": {
+            "type": "string"
+          },
+          "parameters": {
+            "type": "object",
+            "additionalProperties": {
+
+            }
+          },
+          "signalId": {
+            "type": "string"
+          },
+          "signalName": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          }
+        }
+      },
+      "Status": {
+        "type": "object",
+        "properties": {
+          "config": {
+            "type": "string"
+          },
+          "elapsedTime": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "element": {
+            "type": "string"
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "indexUI": {
+            "type": "string"
+          },
+          "info": {
+            "type": "object",
+            "additionalProperties": {
+
+            }
+          },
+          "numberOfRuns": {
+            "$ref": "#/components/schemas/NumberOfRuns"
+          },
+          "podName": {
+            "type": "string"
+          },
+          "project": {
+            "type": "string"
+          },
+          "queueNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "simulationId": {
+            "type": "string"
+          },
+          "simulationTime": {
+            "type": "string"
+          },
+          "startedFrom": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "QUEUED",
+              "INITIALIZING",
+              "INITIALIZED",
+              "READY",
+              "RUNNING",
+              "PAUSED",
+              "COMPLETED",
+              "TERMINATING",
+              "TERMINATED",
+              "ERROR"
+            ]
+          },
+          "ui": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "userId": {
+            "type": "string"
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          }
+        }
+      },
+      "VariablesName": {
+        "type": "object",
+        "properties": {
+          "variables": {
+            "type": "array",
+            "example": [],
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "VariablesResult": {
+        "type": "object",
+        "properties": {
+          "variables": {
+            "type": "object",
+            "additionalProperties": {
+
+            }
+          }
+        }
+      },
+      "VariablesValues": {
+        "type": "object",
+        "properties": {
+          "context": {
+            "type": "string"
+          },
+          "propertyPath": {
+            "type": "string"
+          },
+          "variables": {
+            "type": "object",
+            "additionalProperties": {
+
+            }
+          }
+        }
+      },
+      "VerificationResult": {
+        "type": "object",
+        "properties": {
+          "constraints": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ConstraintResult"
+            }
+          },
+          "property": {
+            "type": "string"
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RequirementResult"
+            }
+          },
+          "status": {
+            "type": "string"
+          },
+          "value": {
+
+          }
+        }
+      }
+    }
+  }
+}

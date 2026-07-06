@@ -1,0 +1,251 @@
+{
+  "snapshot_date": "2026-07-06",
+  "root_intent": "Offline AI-readable starter pack for Cameo, Teamwork Cloud, SysML, EICD digestion, and supporting languages.",
+  "read_order": [
+    "Briefings/00_START_HERE.md",
+    "Briefings/01_VERSION_SNAPSHOT.md",
+    "Briefings/02_Cameo_2022x_2024x_2026x.md",
+    "Briefings/03_Teamwork_Cloud_2022x_2024x_2026x.md",
+    "Briefings/04_SysML_v1_and_v2.md",
+    "Briefings/05_EICD_to_Pinout_Tables.md",
+    "Briefings/06_Cameo_Project_Data_Scripts_Plugins.md",
+    "Briefings/07_Python_3_11.md",
+    "Briefings/08_PowerShell.md",
+    "Briefings/09_Java.md",
+    "Briefings/10_PRODUCTION_DEPLOYMENT_PLAYBOOK.md",
+    "Briefings/11_LEARNING_PATH_AND_CURRICULUM.md",
+    "Briefings/12_Cameo_Plugin_Development_Guide.md",
+    "Briefings/13_Teamwork_Cloud_API_Playbook.md",
+    "Briefings/33_TWC_AUTH_PATTERNS.md",
+    "Briefings/34_CAMEO_OPENAPI_CLASS_MAP.md",
+    "Briefings/35_CAMEO_PLUGIN_CALL_PATTERNS.md",
+    "Briefings/36_CAMEO_REPORT_GROOVY_PATTERNS.md",
+    "Briefings/37_CAMEO_PACKAGE_READY_NOINSTALL_PLAYBOOK.md",
+    "Briefings/14_SysML_v1_to_v2_Migration_Guide.md",
+    "Briefings/15_EICD_Pinout_Transformation_Spec.md",
+    "Briefings/16_Decision_Trees_and_Checklists.md",
+    "Briefings/17_AI_Operator_Quickstart.md",
+    "Briefings/18_Failure_Modes_and_Traps.md",
+    "Briefings/19_MASTER_INDEX.md",
+    "Briefings/20_LABS_AND_EXERCISES.md",
+    "Briefings/21_SCENARIO_PLAYBOOKS.md",
+    "Briefings/22_COOKBOOK_TASK_GUIDES.md",
+    "Briefings/23_COURSE_MODULES.md",
+    "Briefings/24_FIELD_OPERATIONS_RUNBOOK.md",
+    "Briefings/25_SAMPLE_WORKFLOWS.md",
+    "Briefings/26_STARTER_BUNDLES.md",
+    "Briefings/27_VALIDATION_AND_QA_GUIDE.md",
+    "Briefings/28_DOCUMENT_AND_REPORT_STRATEGIES.md",
+    "Briefings/29_OFFLINE_ENCLAVE_PACKAGING_GUIDE.md",
+    "Briefings/30_FINAL_RECOMMENDATIONS.md",
+    "Briefings/31_PLUGIN_SYSTEM_RAILS.md",
+    "Briefings/32_PLUGIN_CONTEXT_BOUNDARIES.md"
+  ],
+  "topics": {
+    "cameo_2022x_2024x_2026x": {
+      "briefing": "Briefings/02_Cameo_2022x_2024x_2026x.md",
+      "sources": [
+        "References/SOURCE_INDEX.md#dassault--no-magic--catia-magic",
+        "References/VERSION_MATRIX.csv"
+      ]
+    },
+    "twc_2022x_2024x_2026x": {
+      "briefing": "Briefings/03_Teamwork_Cloud_2022x_2024x_2026x.md",
+      "sources": [
+        "References/SOURCE_INDEX.md#dassault--no-magic--catia-magic",
+        "References/VERSION_MATRIX.csv"
+      ]
+    },
+    "sysml_v1_v2": {
+      "briefing": "Briefings/04_SysML_v1_and_v2.md",
+      "sources": [
+        "References/SOURCE_INDEX.md#sysml",
+        "References/VERSION_MATRIX.csv"
+      ]
+    },
+    "eicd_to_pinout": {
+      "briefing": "Briefings/05_EICD_to_Pinout_Tables.md",
+      "sources": [
+        "References/SOURCE_INDEX.md#icd--interface-practices"
+      ]
+    },
+    "cameo_data_scripts_plugins": {
+      "briefing": "Briefings/06_Cameo_Project_Data_Scripts_Plugins.md",
+      "sources": [
+        "References/SOURCE_INDEX.md#cameo--magicdraw-developer-and-reporting-docs",
+        "References/SOURCE_INDEX.md#teamwork-cloud-apis"
+      ]
+    },
+    "python_3_11": {
+      "briefing": "Briefings/07_Python_3_11.md",
+      "sources": [
+        "References/SOURCE_INDEX.md#languages",
+        "References/VERSION_MATRIX.csv"
+      ]
+    },
+    "powershell": {
+      "briefing": "Briefings/08_PowerShell.md",
+      "sources": [
+        "References/SOURCE_INDEX.md#languages",
+        "References/VERSION_MATRIX.csv"
+      ]
+    },
+    "java": {
+      "briefing": "Briefings/09_Java.md",
+      "sources": [
+        "References/SOURCE_INDEX.md#languages",
+        "References/VERSION_MATRIX.csv"
+      ]
+    },
+    "production_delivery": {
+      "briefing": "Briefings/10_PRODUCTION_DEPLOYMENT_PLAYBOOK.md",
+      "sources": [
+        "References/COMPATIBILITY_NOTES.md",
+        "References/VERSION_MATRIX.csv"
+      ]
+    },
+    "learning_path": {
+      "briefing": "Briefings/11_LEARNING_PATH_AND_CURRICULUM.md"
+    },
+    "plugin_development": {
+      "briefing": "Briefings/12_Cameo_Plugin_Development_Guide.md",
+      "sources": [
+        "References/PLUGIN_SKELETON.java.txt",
+        "References/PLUGIN_XML_EXAMPLE.xml",
+        "References/SOURCE_INDEX.md#cameo--magicdraw-developer-and-reporting-docs"
+      ]
+    },
+    "twc_api_playbook": {
+      "briefing": "Briefings/13_Teamwork_Cloud_API_Playbook.md",
+      "sources": [
+        "References/TWC_API_WORKFLOWS.json",
+        "References/SOURCE_INDEX.md#teamwork-cloud-apis"
+      ]
+    },
+    "twc_auth_patterns": {
+      "briefing": "Briefings/33_TWC_AUTH_PATTERNS.md",
+      "sources": [
+        "References/TWC_ENDPOINT_CATALOG.json",
+        "References/TWC_REQUEST_RESPONSE_EXAMPLES.json",
+        "References/TWC_REST_SWAGGER_2026xR1.json",
+        "References/TWC_SIMULATION_SWAGGER_2026xR1.json",
+        "References/SOURCE_INDEX.md#teamwork-cloud-apis"
+      ]
+    },
+    "cameo_openapi_class_map": {
+      "briefing": "Briefings/34_CAMEO_OPENAPI_CLASS_MAP.md",
+      "sources": [
+        "References/CAMEO_OPENAPI_OPERATION_RECIPES.json",
+        "References/SOURCE_INDEX.md#cameo--magicdraw-developer-and-reporting-docs",
+        "References/SOURCE_INDEX.md#additional-cameo--magicdraw-api-pages-used-for-the-call-maps"
+      ]
+    },
+    "cameo_plugin_call_patterns": {
+      "briefing": "Briefings/35_CAMEO_PLUGIN_CALL_PATTERNS.md",
+      "sources": [
+        "References/PLUGIN_SKELETON.java.txt",
+        "References/PLUGIN_XML_EXAMPLE.xml",
+        "References/CAMEO_OPENAPI_OPERATION_RECIPES.json",
+        "References/SOURCE_INDEX.md#cameo--magicdraw-developer-and-reporting-docs",
+        "References/SOURCE_INDEX.md#additional-cameo--magicdraw-api-pages-used-for-the-call-maps"
+      ]
+    },
+    "cameo_report_groovy_patterns": {
+      "briefing": "Briefings/36_CAMEO_REPORT_GROOVY_PATTERNS.md",
+      "sources": [
+        "References/REPORT_WIZARD_TEMPLATE_EXAMPLE.vm",
+        "References/CAMEO_OPENAPI_OPERATION_RECIPES.json",
+        "References/SOURCE_INDEX.md#cameo--magicdraw-developer-and-reporting-docs",
+        "References/SOURCE_INDEX.md#additional-cameo--magicdraw-api-pages-used-for-the-call-maps"
+      ]
+    },
+    "cameo_package_ready_noinstall": {
+      "briefing": "Briefings/37_CAMEO_PACKAGE_READY_NOINSTALL_PLAYBOOK.md",
+      "sources": [
+        "References/CAMEO_OPENAPI_OPERATION_RECIPES.json",
+        "References/VERSION_MATRIX.csv"
+      ]
+    },
+    "sysml_migration": {
+      "briefing": "Briefings/14_SysML_v1_to_v2_Migration_Guide.md"
+    },
+    "pinout_transformation_spec": {
+      "briefing": "Briefings/15_EICD_Pinout_Transformation_Spec.md"
+    },
+    "decision_trees_checklists": {
+      "briefing": "Briefings/16_Decision_Trees_and_Checklists.md"
+    },
+    "ai_operator_quickstart": {
+      "briefing": "Briefings/17_AI_Operator_Quickstart.md"
+    },
+    "failure_modes": {
+      "briefing": "Briefings/18_Failure_Modes_and_Traps.md"
+    },
+    "master_index": {
+      "briefing": "Briefings/19_MASTER_INDEX.md"
+    },
+    "labs_and_exercises": {
+      "briefing": "Briefings/20_LABS_AND_EXERCISES.md"
+    },
+    "scenario_playbooks": {
+      "briefing": "Briefings/21_SCENARIO_PLAYBOOKS.md"
+    },
+    "cookbook_task_guides": {
+      "briefing": "Briefings/22_COOKBOOK_TASK_GUIDES.md"
+    },
+    "course_modules": {
+      "briefing": "Briefings/23_COURSE_MODULES.md"
+    },
+    "field_operations_runbook": {
+      "briefing": "Briefings/24_FIELD_OPERATIONS_RUNBOOK.md"
+    },
+    "sample_workflows": {
+      "briefing": "Briefings/25_SAMPLE_WORKFLOWS.md",
+      "sources": [
+        "References/SAMPLE_EICD_RAW.csv",
+        "References/SAMPLE_PINOUT_NORMALIZED.csv",
+        "References/PINOUT_CANONICAL_SCHEMA.json",
+        "References/TWC_INVENTORY_OUTPUT_SCHEMA.json",
+        "References/PLUGIN_STARTER_PROJECT_LAYOUT.txt"
+      ]
+    },
+    "starter_bundles": {
+      "briefing": "Briefings/26_STARTER_BUNDLES.md"
+    },
+    "validation_and_qa": {
+      "briefing": "Briefings/27_VALIDATION_AND_QA_GUIDE.md",
+      "sources": [
+        "References/PINOUT_VALIDATION_REPORT_SAMPLE.json",
+        "References/TWC_INVENTORY_SAMPLE_OUTPUT.json"
+      ]
+    },
+    "document_and_report_strategies": {
+      "briefing": "Briefings/28_DOCUMENT_AND_REPORT_STRATEGIES.md",
+      "sources": [
+        "References/REPORT_WIZARD_TEMPLATE_EXAMPLE.vm"
+      ]
+    },
+    "offline_enclave_packaging": {
+      "briefing": "Briefings/29_OFFLINE_ENCLAVE_PACKAGING_GUIDE.md",
+      "sources": [
+        "References/MBSE_GOLDEN_DROP_LAYOUT.txt"
+      ]
+    },
+    "final_recommendations": {
+      "briefing": "Briefings/30_FINAL_RECOMMENDATIONS.md"
+    },
+    "plugin_system_rails": {
+      "briefing": "Briefings/31_PLUGIN_SYSTEM_RAILS.md"
+    },
+    "plugin_context_boundaries": {
+      "briefing": "Briefings/32_PLUGIN_CONTEXT_BOUNDARIES.md"
+    }
+  },
+  "known_limits": [
+    "This is a curated knowledge pack, not a full mirrored vendor documentation repository.",
+    "The TWC endpoint catalog is built from the public 2026x Refresh1 Swagger snapshot; deployment-enabled surfaces can still vary by server.",
+    "The Cameo Open API guidance is a curated class and call map, not a full bundled Javadoc mirror.",
+    "Hot-fix level tracking is partial where public pages summarize availability but do not give a single canonical latest-per-product matrix.",
+    "EICD-to-pinout content includes engineering synthesis and not only verbatim vendor guidance."
+  ]
+}

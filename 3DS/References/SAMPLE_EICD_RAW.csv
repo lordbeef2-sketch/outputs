@@ -1,0 +1,8 @@
+Document,Revision,Interface,From System,From Connector,From Pin,To System,To Connector,To Pin,Signal,Type,Direction,Voltage,Notes
+EICD-001,A,Vehicle Power Interface,Power Dist Unit,J1,A1,Flight Computer,P1,1,28V_MAIN,Power,OUT,28VDC,Primary switched power
+EICD-001,A,Vehicle Power Interface,Power Dist Unit,J1,A2,Flight Computer,P1,2,PWR_RTN,Ground,OUT,0V,Power return
+EICD-001,A,Command Link,Flight Computer,P2,7,Radio,J5,14,UART_TX,Serial,OUT,3.3V,FC transmits to radio
+EICD-001,A,Command Link,Flight Computer,P2,8,Radio,J5,15,UART_RX,Serial,IN,3.3V,FC receives from radio
+EICD-001,A,Command Link,Flight Computer,P2,9,Radio,J5,16,UART_GND,Ground,N/A,0V,Signal reference
+EICD-001,A,Payload Trigger,Flight Computer,P3,C4,Payload Controller,J2,B9,TRIG_DISCRETE,Discrete,OUT,5V,Active high discrete trigger
+EICD-001,A,Ethernet Backbone,Flight Computer,P4,11-12,Switch,J8,21-22,ETH0_DIFF,Data,BIDIR,1000BASE-T,Differential pair packed into one row

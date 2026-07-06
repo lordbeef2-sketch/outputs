@@ -1,0 +1,14 @@
+golden-drop/
+  Briefings/
+  References/
+  outputs/
+    reports/
+    normalized/
+    validation/
+  operator-logs/
+  deployment-notes/
+
+Usage:
+- Keep source knowledge separate from generated outputs.
+- Do not overwrite canonical references with run-generated artifacts.
+- Preserve operator logs and validation outputs with timestamps.

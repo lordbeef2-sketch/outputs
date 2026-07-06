@@ -1,0 +1,37 @@
+package example;
+
+import com.nomagic.magicdraw.actions.MDAction;
+import com.nomagic.magicdraw.core.Application;
+import com.nomagic.magicdraw.plugins.Plugin;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+
+public class ExamplePlugin extends Plugin {
+    @Override
+    public void init() {
+        Application.getInstance().getGUILog().log("[ExamplePlugin] initialized");
+        // Register actions/configurators here in a real plugin.
+    }
+
+    @Override
+    public boolean close() {
+        return true;
+    }
+
+    @Override
+    public boolean isSupported() {
+        return true;
+    }
+
+    public static class ExampleAction extends MDAction {
+        public ExampleAction() {
+            super("EXAMPLE_ACTION", "Example Action", null, null);
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent event) {
+            JOptionPane.showMessageDialog(null, "Example action executed.");
+        }
+    }
+}
