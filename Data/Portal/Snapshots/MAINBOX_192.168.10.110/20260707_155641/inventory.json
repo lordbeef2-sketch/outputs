@@ -1,0 +1,2429 @@
+﻿{
+    "ScanDate":  "2026-07-07 15:56:41",
+    "IpAddress":  "192.168.10.110",
+    "ComputerName":  "MAINBOX",
+    "DnsHostName":  "MainBox",
+    "MacAddress":  "F0:57:A6:A4:CB:12",
+    "LastLoggedInUser":  "MainBox\\Main1",
+    "WorkgroupName":  "WORKGROUP",
+    "DomainName":  "",
+    "Manufacturer":  "ASUS",
+    "Model":  "System Product Name",
+    "SerialNumber":  "System Serial Number",
+    "OperatingSystemCaption":  "Microsoft Windows 11 Pro",
+    "OperatingSystemVersion":  "10.0.26200",
+    "LastBootLocal":  "2026-07-06 08:37:09",
+    "DiscoveryMethod":  "ICMP",
+    "Notes":  "",
+    "SnapshotFolderName":  "20260707_155641",
+    "SnapshotFolderPath":  "C:\\Users\\Main1\\Documents\\Codex\\2026-07-06\\i\\outputs\\Data\\Portal\\Snapshots\\MAINBOX_192.168.10.110\\20260707_155641",
+    "InstalledSoftware":  [
+                              {
+                                  "DisplayName":  "7-Zip 24.09 (x64)",
+                                  "DisplayVersion":  "24.09",
+                                  "Publisher":  "Igor Pavlov",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\7-Zip\\Uninstall.exe\""
+                              },
+                              {
+                                  "DisplayName":  "AMD Software",
+                                  "DisplayVersion":  "26.2.2",
+                                  "Publisher":  "Advanced Micro Devices, Inc.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\AMD\\CIM\\BIN64\\AMDSoftwareInstaller.exe\" /EXPRESS_UNINSTALL /IGNORE_UPGRADE /ON_REBOOT_MESSAGE:NO"
+                              },
+                              {
+                                  "DisplayName":  "Anaconda3 2025.06-0 (Python 3.13.5 64-bit)",
+                                  "DisplayVersion":  "2025.06-0",
+                                  "Publisher":  "Anaconda, Inc.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\ProgramData\\anaconda3\\Uninstall-Anaconda3.exe\""
+                              },
+                              {
+                                  "DisplayName":  "Armoury Crate Service",
+                                  "DisplayVersion":  "6.5.7.0",
+                                  "Publisher":  "ASUSTeK COMPUTER INC.",
+                                  "InstallDate":  "20260309",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\ASUS\\Armoury Crate Service\\ArmouryCrate.Uninstaller.exe\""
+                              },
+                              {
+                                  "DisplayName":  "ArtMoney SE v8.19 64-bits",
+                                  "DisplayVersion":  "8.19.0",
+                                  "Publisher":  "System SoftLab",
+                                  "InstallDate":  "20250116",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"c:\\Games\\ArtMoney\\Uninstall\\unins000.exe\""
+                              },
+                              {
+                                  "DisplayName":  "AVG AntiVirus Free",
+                                  "DisplayVersion":  "26.6.11052.3716",
+                                  "Publisher":  "Gen Digital Inc.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\Common Files\\AVG\\Icarus\\avg-av\\icarus.exe\" /manual_update /uninstall:avg-av"
+                              },
+                              {
+                                  "DisplayName":  "BlueStacks",
+                                  "DisplayVersion":  "5.22.110.1028",
+                                  "Publisher":  "now.gg, Inc.",
+                                  "InstallDate":  "20251029",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\BlueStacks_nxt\\BlueStacksUninstaller.exe\" -tmp"
+                              },
+                              {
+                                  "DisplayName":  "CPUID HWMonitor 1.55",
+                                  "DisplayVersion":  "1.55",
+                                  "Publisher":  "CPUID, Inc.",
+                                  "InstallDate":  "20250128",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\CPUID\\HWMonitor\\unins000.exe\""
+                              },
+                              {
+                                  "DisplayName":  "Comfy Desktop 1.0.22",
+                                  "DisplayVersion":  "1.0.22",
+                                  "Publisher":  "Comfy Org",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Apps\\Comfy Desktop\\Uninstall Comfy Desktop.exe\" /allusers"
+                              },
+                              {
+                                  "DisplayName":  "Git",
+                                  "DisplayVersion":  "2.51.0",
+                                  "Publisher":  "The Git Development Community",
+                                  "InstallDate":  "20250913",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\Git\\unins001.exe\""
+                              },
+                              {
+                                  "DisplayName":  "Intel(R) Graphics Software \u0026 Drivers",
+                                  "DisplayVersion":  "1.0.1254.0",
+                                  "Publisher":  "Intel(R) Corporation",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\Intel\\Intel(R) Graphics Software \u0026 Drivers\\Uninstaller.exe\" --uninstaller"
+                              },
+                              {
+                                  "DisplayName":  "Macrium Reflect Home",
+                                  "DisplayVersion":  "v10.0.8843",
+                                  "Publisher":  "Paramount Software (UK) Ltd.",
+                                  "InstallDate":  "4/26/2026",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\Macrium\\Reflect\\xReflect.exe\""
+                              },
+                              {
+                                  "DisplayName":  "Notepad++ (64-bit x64)",
+                                  "DisplayVersion":  "8.7.4",
+                                  "Publisher":  "Notepad++ Team",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\Notepad++\\uninstall.exe\""
+                              },
+                              {
+                                  "DisplayName":  "SMASH LEGENDS",
+                                  "DisplayVersion":  "",
+                                  "Publisher":  "5minlab Corp.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\Steam\\steam.exe\" steam://uninstall/1352080"
+                              },
+                              {
+                                  "DisplayName":  "Space Engineers - Mod SDK",
+                                  "DisplayVersion":  "",
+                                  "Publisher":  "",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\Steam\\steam.exe\" steam://uninstall/326880"
+                              },
+                              {
+                                  "DisplayName":  "Dead by Daylight",
+                                  "DisplayVersion":  "",
+                                  "Publisher":  "Behaviour Interactive Inc.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\Steam\\steam.exe\" steam://uninstall/381210"
+                              },
+                              {
+                                  "DisplayName":  "WinRAR 7.01 (64-bit)",
+                                  "DisplayVersion":  "7.01.0",
+                                  "Publisher":  "win.rar GmbH",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "C:\\Program Files\\WinRAR\\uninstall.exe"
+                              },
+                              {
+                                  "DisplayName":  "Intel(R) Computing Improvement Program",
+                                  "DisplayVersion":  "2.4.11187",
+                                  "Publisher":  "Intel Corporation",
+                                  "InstallDate":  "20260707",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /X{24AFB50D-A5AA-4786-8D49-F944D9A0E0B6}"
+                              },
+                              {
+                                  "DisplayName":  "Git LFS version 3.7.0",
+                                  "DisplayVersion":  "3.7.0",
+                                  "Publisher":  "GitHub, Inc.",
+                                  "InstallDate":  "20250913",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\Program Files\\Git LFS\\unins000.exe\""
+                              },
+                              {
+                                  "DisplayName":  "oneAPI Level Zero",
+                                  "DisplayVersion":  "1.24.0",
+                                  "Publisher":  "Intel",
+                                  "InstallDate":  "20260707",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /I{2BA535F4-FEF9-45E1-9FF6-66C4E0F629FF}"
+                              },
+                              {
+                                  "DisplayName":  "ROG Live Service",
+                                  "DisplayVersion":  "3.5.6.0",
+                                  "Publisher":  "ASUSTek COMPUTER INC.",
+                                  "InstallDate":  "20260512",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /I{2D87BFB6-C184-4A59-9BBE-3E20CE797631}"
+                              },
+                              {
+                                  "DisplayName":  "ROGFontInstaller",
+                                  "DisplayVersion":  "1.0.0",
+                                  "Publisher":  "ASUS",
+                                  "InstallDate":  "20260402",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /I{605108C1-153E-43D8-8A67-7CE326B00ECA}"
+                              },
+                              {
+                                  "DisplayName":  "Node.js",
+                                  "DisplayVersion":  "22.16.0",
+                                  "Publisher":  "Node.js Foundation",
+                                  "InstallDate":  "20250618",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /I{672AF449-6278-4AC5-8FE0-A951FCD7CFB0}"
+                              },
+                              {
+                                  "DisplayName":  "Google Drive",
+                                  "DisplayVersion":  "127.0.1.0",
+                                  "Publisher":  "Google LLC",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "C:\\Program Files\\Google\\Drive File Stream\\127.0.1.0\\uninstall.exe"
+                              },
+                              {
+                                  "DisplayName":  "Bonjour",
+                                  "DisplayVersion":  "3.0.0.10",
+                                  "Publisher":  "Apple Inc.",
+                                  "InstallDate":  "20250105",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /X{6E3610B2-430D-4EB0-81E3-2B57E8B9DE8D}"
+                              },
+                              {
+                                  "DisplayName":  "grepWin x64",
+                                  "DisplayVersion":  "2.0.1232",
+                                  "Publisher":  "Stefans Tools",
+                                  "InstallDate":  "20230923",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /I{75A64F1A-4A9F-44C9-957E-4036384C434B}"
+                              },
+                              {
+                                  "DisplayName":  "Java 8 Update 471 (64-bit)",
+                                  "DisplayVersion":  "8.0.4710.9",
+                                  "Publisher":  "Oracle Corporation",
+                                  "InstallDate":  "20251124",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /X{77924AE4-039E-4CA4-87B4-2F64180471F0}"
+                              },
+                              {
+                                  "DisplayName":  "Zoom VDI Plugin Management(64bit)",
+                                  "DisplayVersion":  "6.5.26790",
+                                  "Publisher":  "Zoom Communications, Inc.",
+                                  "InstallDate":  "20260122",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /X{8A82BB16-D728-4F8F-960F-42B88021EA39}"
+                              },
+                              {
+                                  "DisplayName":  "Blender",
+                                  "DisplayVersion":  "5.1.2",
+                                  "Publisher":  "Blender Foundation",
+                                  "InstallDate":  "20260619",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /X{9CB8CCE7-F0F8-418C-9FA1-B09BEE912FD0}"
+                              },
+                              {
+                                  "DisplayName":  "Intel(R) Serial IO",
+                                  "DisplayVersion":  "30.100.2531.31",
+                                  "Publisher":  "Intel Corporation",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\ProgramData\\Intel Package Cache {9FD91C5C-44AE-4D9D-85BE-AE52816B0294}\\SetupSerialIO.exe\" -uninstall"
+                              },
+                              {
+                                  "DisplayName":  "NVIDIA Graphics Driver 572.83",
+                                  "DisplayVersion":  "572.83",
+                                  "Publisher":  "NVIDIA Corporation",
+                                  "InstallDate":  "20250320",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "\"C:\\WINDOWS\\SysWOW64\\RunDll32.EXE\" \"C:\\Program Files\\NVIDIA Corporation\\Installer2\\InstallerCore\\NVI2.DLL\",UninstallPackage Display.Driver"
+                              },
+                              {
+                                  "DisplayName":  "Quick CPU x64",
+                                  "DisplayVersion":  "4.10.0.0",
+                                  "Publisher":  "CoderBag LLC",
+                                  "InstallDate":  "20241102",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /X{B83DF7F3-83B2-4AB8-931B-3EE0C617D378}"
+                              },
+                              {
+                                  "DisplayName":  "Paradox Launcher v2",
+                                  "DisplayVersion":  "2.4.0",
+                                  "Publisher":  "Paradox Interactive",
+                                  "InstallDate":  "20250116",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /X{BCBAAF27-1C19-48A5-8DEF-258E46D93FE0}"
+                              },
+                              {
+                                  "DisplayName":  "Go Programming Language amd64 go1.24.4",
+                                  "DisplayVersion":  "1.24.4",
+                                  "Publisher":  "https://go.dev",
+                                  "InstallDate":  "20250627",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /X{BF44F985-A720-4EB9-8B4B-6C2F76A30CDB}"
+                              },
+                              {
+                                  "DisplayName":  "AMD Install Manager",
+                                  "DisplayVersion":  "26.10.26174.0747",
+                                  "Publisher":  "Advanced Micro Devices, Inc.",
+                                  "InstallDate":  "20260623",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /X{C2C00749-EC1B-4833-A30F-EF846617E2B3}"
+                              },
+                              {
+                                  "DisplayName":  "AURA lighting effect add-on x64",
+                                  "DisplayVersion":  "0.0.55",
+                                  "Publisher":  "ASUSTek COMPUTER INC.",
+                                  "InstallDate":  "20260512",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /I{C5A4A164-4428-4931-B728-96EEF0FA3C44}"
+                              },
+                              {
+                                  "DisplayName":  "Citrix Secure Access Endpoint Analysis",
+                                  "DisplayVersion":  "25.10.1.10",
+                                  "Publisher":  "Citrix Systems, Inc.",
+                                  "InstallDate":  "20260122",
+                                  "Scope":  "Machine64",
+                                  "UninstallString":  "MsiExec.exe /X{EB68BCBE-8851-4BAB-ABFA-557E93BC31A9}"
+                              },
+                              {
+                                  "DisplayName":  "Amuse",
+                                  "DisplayVersion":  "3.0.7",
+                                  "Publisher":  "TensorStack",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"D:\\Program Files\\Amuse\\Uninstall.exe\""
+                              },
+                              {
+                                  "DisplayName":  "Citrix Workspace 2511",
+                                  "DisplayVersion":  "25.11.10.50",
+                                  "Publisher":  "Citrix Systems, Inc.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\Citrix\\Citrix Workspace 2511\\bootstrapperhelper.exe\" /uninstall /cleanup"
+                              },
+                              {
+                                  "DisplayName":  "Google Chrome",
+                                  "DisplayVersion":  "150.0.7871.47",
+                                  "Publisher":  "Google LLC",
+                                  "InstallDate":  "20260703",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files\\Google\\Chrome\\Application\\150.0.7871.47\\Installer\\setup.exe\" --uninstall --channel=stable --system-level --verbose-logging"
+                              },
+                              {
+                                  "DisplayName":  "TP-Link PLC Utility",
+                                  "DisplayVersion":  "2.3.5114.15",
+                                  "Publisher":  "TP-Link",
+                                  "InstallDate":  "20240917",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\InstallShield Installation Information\\{88BC1EEA-0E0D-4016-B892-5FE92C01845A}\\setup.exe\" -runfromtemp -l0x0409  -removeonly"
+                              },
+                              {
+                                  "DisplayName":  "Realtek USB Wireless LAN Driver",
+                                  "DisplayVersion":  "Drv_3.00.0027",
+                                  "Publisher":  "REALTEK Semiconductor Corp.",
+                                  "InstallDate":  "20250729",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\InstallShield Installation Information\\{DBCC4C27-F949-482b-B786-7B3B67587CD2}\\Setup.exe\" -uninst -removeonly -runfromtemp /v\"ProductCode=\"{DBCC4C27-F949-482b-B786-7B3B67587CD2}\"\""
+                              },
+                              {
+                                  "DisplayName":  "Overwolf",
+                                  "DisplayVersion":  "0.300.0.11",
+                                  "Publisher":  "Overwolf Ltd.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\Overwolf\\\\OWUninstaller.exe\" /S"
+                              },
+                              {
+                                  "DisplayName":  "Steam",
+                                  "DisplayVersion":  "2.10.91.91",
+                                  "Publisher":  "Valve Corporation",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "C:\\Program Files (x86)\\Steam\\uninstall.exe"
+                              },
+                              {
+                                  "DisplayName":  "VLC media player",
+                                  "DisplayVersion":  "3.0.21",
+                                  "Publisher":  "VideoLAN",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\VideoLAN\\VLC\\uninstall.exe\""
+                              },
+                              {
+                                  "DisplayName":  "WAVLINK_693A5_692A3_Setup 1030.44.1015.2021_Drv_3.00.0027_UI_1.00.0287B.L",
+                                  "DisplayVersion":  "1030.44.1015.2021_Drv_3.00.0027_UI_1.00.0287B.L",
+                                  "Publisher":  "WAVLINK, Inc.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "C:\\Program Files (x86)\\WAVLINK_693A5_692A3_Driver\\uninst.exe"
+                              },
+                              {
+                                  "DisplayName":  "WinPcap 4.1.3",
+                                  "DisplayVersion":  "4.1.0.2980",
+                                  "Publisher":  "Riverbed Technology, Inc.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "C:\\Program Files (x86)\\WinPcap\\uninstall.exe"
+                              },
+                              {
+                                  "DisplayName":  "Intel® Driver \u0026 Support Assistant",
+                                  "DisplayVersion":  "26.1.0.2",
+                                  "Publisher":  "Intel",
+                                  "InstallDate":  "20260707",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\ProgramData\\Package Cache\\{07E6D0AC-D610-4152-A5CC-ADE193E4CD4D}\\Intel-Driver-and-Support-Assistant-Installer.exe\"  /uninstall"
+                              },
+                              {
+                                  "DisplayName":  "Cisco PEAP Module",
+                                  "DisplayVersion":  "1.1.6",
+                                  "Publisher":  "Cisco Systems, Inc.",
+                                  "InstallDate":  "20250729",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "MsiExec.exe /I{0A4EF0E6-A912-4CDE-A7F3-6E56E7C13A2F}"
+                              },
+                              {
+                                  "DisplayName":  "AURA lighting effect add-on",
+                                  "DisplayVersion":  "0.0.55",
+                                  "Publisher":  "ASUSTek COMPUTER INC.",
+                                  "InstallDate":  "20260512",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "MsiExec.exe /I{1E2EA04B-FCA7-457E-B6F4-F33E1858E859}"
+                              },
+                              {
+                                  "DisplayName":  "EA app",
+                                  "DisplayVersion":  "13.550.0.6063",
+                                  "Publisher":  "Electronic Arts",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files\\Electronic Arts\\EA Desktop\\EA Desktop\\EAUninstall.exe\" /uninstall"
+                              },
+                              {
+                                  "DisplayName":  "ROG FAN XPERT 4",
+                                  "DisplayVersion":  "4.02.08",
+                                  "Publisher":  "ASUSTek Computer Inc.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "C:\\Program Files (x86)\\InstallShield Installation Information\\{2dfe216d-3481-4684-ad4d-2566bd7cfe4f}\\Setup.exe -uninstall"
+                              },
+                              {
+                                  "DisplayName":  "ASUS Framework Service",
+                                  "DisplayVersion":  "4.2.4.13",
+                                  "Publisher":  "ASUSTeK Computer Inc.",
+                                  "InstallDate":  "20260512",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\InstallShield Installation Information\\{339A6383-7862-46DA-8A9D-E84180EF9424}\\FrameworkServiceSetup.exe\" /uninstall"
+                              },
+                              {
+                                  "DisplayName":  "Spybot Anti-Beacon",
+                                  "DisplayVersion":  "5.4",
+                                  "Publisher":  "Safer-Networking Ltd.",
+                                  "InstallDate":  "20260304",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\Safer-Networking Ltd\\Spybot Anti-Beacon\\unins000.exe\""
+                              },
+                              {
+                                  "DisplayName":  "Epic Online Services",
+                                  "DisplayVersion":  "2.8.1",
+                                  "Publisher":  "Epic Games, Inc.",
+                                  "InstallDate":  "20241221",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "MsiExec.exe /X{5122B8BC-D6DF-48FF-8D4E-15A63EEC5073}"
+                              },
+                              {
+                                  "DisplayName":  "Cisco EAP-FAST Module",
+                                  "DisplayVersion":  "2.2.14",
+                                  "Publisher":  "Cisco Systems, Inc.",
+                                  "InstallDate":  "20250729",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "MsiExec.exe /I{64BF0187-F3D2-498B-99EA-163AF9AE6EC9}"
+                              },
+                              {
+                                  "DisplayName":  "Python Launcher",
+                                  "DisplayVersion":  "3.12.10150.0",
+                                  "Publisher":  "Python Software Foundation",
+                                  "InstallDate":  "20260621",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "MsiExec.exe /X{665A0435-D5D5-4A49-9DE0-FBC23C5425ED}"
+                              },
+                              {
+                                  "DisplayName":  "TechPowerUp GPU-Z",
+                                  "DisplayVersion":  "2.70.0",
+                                  "Publisher":  "TechPowerUp",
+                                  "InstallDate":  "20260623",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Apps\\GPU-Z\\unins000.exe\""
+                              },
+                              {
+                                  "DisplayName":  "Citrix Browser Content Redirection Plug-in",
+                                  "DisplayVersion":  "25.11.10.41",
+                                  "Publisher":  "Citrix Systems, Inc.",
+                                  "InstallDate":  "20260301",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "MsiExec.exe /I{8CFADC9E-12B8-4AEA-93F8-4F417A1115E5}"
+                              },
+                              {
+                                  "DisplayName":  "ASUS Motherboard",
+                                  "DisplayVersion":  "5.05.03",
+                                  "Publisher":  "ASUSTek Computer Inc.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "C:\\Program Files (x86)\\InstallShield Installation Information\\{93795eb8-bd86-4d4d-ab27-ff80f9467b37}\\Setup.exe -uninstall"
+                              },
+                              {
+                                  "DisplayName":  "GameSDK Service",
+                                  "DisplayVersion":  "1.0.6.0",
+                                  "Publisher":  "ASUSTek COMPUTER INC.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\ProgramData\\Package Cache\\{a2676cbf-c8cc-47b6-b36f-a8f447b59713}\\GameSDK.exe\"  /uninstall"
+                              },
+                              {
+                                  "DisplayName":  "Cisco LEAP Module",
+                                  "DisplayVersion":  "1.0.19",
+                                  "Publisher":  "Cisco Systems, Inc.",
+                                  "InstallDate":  "20250729",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "MsiExec.exe /I{AF312B06-5C5C-468E-89B3-BE6DE2645722}"
+                              },
+                              {
+                                  "DisplayName":  "Spybot - Search \u0026 Destroy",
+                                  "DisplayVersion":  "2.9.85.5",
+                                  "Publisher":  "Safer-Networking Ltd.",
+                                  "InstallDate":  "20260304",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\Spybot - Search \u0026 Destroy 2\\unins000.exe\""
+                              },
+                              {
+                                  "DisplayName":  "Epic Games Launcher",
+                                  "DisplayVersion":  "1.3.128.0",
+                                  "Publisher":  "Epic Games, Inc.",
+                                  "InstallDate":  "20241221",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "MsiExec.exe /X{C5C3EE71-4047-4144-946E-18D500510CB5}"
+                              },
+                              {
+                                  "DisplayName":  "AURA Service",
+                                  "DisplayVersion":  "3.10.10",
+                                  "Publisher":  "ASUSTeK COMPUTER INC.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\ProgramData\\Package Cache\\{c74e7336-6fc2-472d-b921-ba6f5e58bd59}\\AuraServiceSetup.exe\"  /uninstall"
+                              },
+                              {
+                                  "DisplayName":  "AI Suite 3",
+                                  "DisplayVersion":  "3.03.43",
+                                  "Publisher":  "ASUSTeK Computer Inc.",
+                                  "InstallDate":  "",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\ProgramData\\ASUS\\AI Suite III\\Setup.exe\" -u"
+                              },
+                              {
+                                  "DisplayName":  "Realtek Audio Driver",
+                                  "DisplayVersion":  "6.0.9888.1",
+                                  "Publisher":  "Realtek Semiconductor Corp.",
+                                  "InstallDate":  "20260309",
+                                  "Scope":  "Machine32",
+                                  "UninstallString":  "\"C:\\Program Files (x86)\\InstallShield Installation Information\\{F132AF7F-7BCA-4EDE-8A7C-958108FE7DBC}\\Setup.exe\" -runfromtemp  -removeonly"
+                              }
+                          ],
+    "InstalledDrivers":  [
+                             {
+                                 "DeviceName":  "ACPI Fan",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI Fan",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI Fan",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI Fan",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI Fan",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI Fixed Feature Button",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI Power Button",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI Processor Aggregator",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "acpipagr.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI Sleep Button",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI Thermal Zone",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI Wake Alarm",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "acpitime.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "ACPI x64-based PC",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard computers)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "hal.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "AMD Controller Emulation",
+                                 "DriverVersion":  "25.10.0.1",
+                                 "DriverProviderName":  "AMD",
+                                 "Manufacturer":  "AMD",
+                                 "DriverDate":  "2025-09-22 20:00:00",
+                                 "InfName":  "oem20.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "AMD Crash Defender",
+                                 "DriverVersion":  "25.10.0.5",
+                                 "DriverProviderName":  "Advanced Micro Devices, Inc.",
+                                 "Manufacturer":  "Advanced Micro Devices, Inc.",
+                                 "DriverDate":  "2025-12-11 19:00:00",
+                                 "InfName":  "oem84.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "AMD High Definition Audio Device",
+                                 "DriverVersion":  "10.0.1.42",
+                                 "DriverProviderName":  "Advanced Micro Devices",
+                                 "Manufacturer":  "Advanced Micro Devices",
+                                 "DriverDate":  "2025-11-03 19:00:00",
+                                 "InfName":  "oem59.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "AMD Radeon RX 6950 XT",
+                                 "DriverVersion":  "32.0.21043.1005",
+                                 "DriverProviderName":  "Advanced Micro Devices, Inc.",
+                                 "Manufacturer":  "Advanced Micro Devices, Inc.",
+                                 "DriverDate":  "2026-02-17 19:00:00",
+                                 "InfName":  "oem78.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "AMD Streaming Audio Device",
+                                 "DriverVersion":  "1.0.0.14",
+                                 "DriverProviderName":  "AMD",
+                                 "Manufacturer":  "AMD",
+                                 "DriverDate":  "2024-06-04 20:00:00",
+                                 "InfName":  "oem49.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "AMD-Dynamic Audio Noise Supression",
+                                 "DriverVersion":  "1.4.40.0",
+                                 "DriverProviderName":  "Advanced Micro Devices, Inc.",
+                                 "Manufacturer":  "Advanced Micro Devices, Inc.",
+                                 "DriverDate":  "2026-03-03 19:00:00",
+                                 "InfName":  "oem74.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "AMD-OpenCL User Mode Driver",
+                                 "DriverVersion":  "32.0.21043.19003",
+                                 "DriverProviderName":  "Advanced Micro Devices, Inc.",
+                                 "Manufacturer":  "Advanced Micro Devices, Inc.",
+                                 "DriverDate":  "2026-06-18 20:00:00",
+                                 "InfName":  "oem79.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "AMD-Windows Support Components",
+                                 "DriverVersion":  "32.0.21043.19003",
+                                 "DriverProviderName":  "Advanced Micro Devices, Inc.",
+                                 "Manufacturer":  "Advanced Micro Devices, Inc.",
+                                 "DriverDate":  "2026-06-18 20:00:00",
+                                 "InfName":  "oem83.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Audio Endpoint",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2024-03-30 20:00:00",
+                                 "InfName":  "audioendpoint.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Audio Endpoint",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2024-03-30 20:00:00",
+                                 "InfName":  "audioendpoint.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Audio Endpoint",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2024-03-30 20:00:00",
+                                 "InfName":  "audioendpoint.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Audio Endpoint",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2024-03-30 20:00:00",
+                                 "InfName":  "audioendpoint.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Communications Port",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard port types)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "msports.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Composite Bus Enumerator",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "compositebus.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Computer Device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "compdev.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Device Firmware",
+                                 "DriverVersion":  "10.0.26100.4768",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_firmware.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Device Firmware",
+                                 "DriverVersion":  "10.0.26100.4768",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_firmware.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Device Firmware",
+                                 "DriverVersion":  "10.0.26100.4768",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_firmware.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Device Firmware",
+                                 "DriverVersion":  "10.0.26100.4768",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_firmware.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Disk drive",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard disk drives)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "disk.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Disk drive",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard disk drives)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "disk.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "EPSON ET-4950 Series",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "EPSON",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_swdevice.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "EPSON ET-4950 Series",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "escl.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Flash Disk      ",
+                                 "DriverVersion":  "10.0.26100.5074",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Generic ",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "wpdfs.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic Bluetooth Adapter",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "GenericAdapter",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "bth.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic PnP Monitor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard monitor types)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "monitor.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic software device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_swdevice.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic software device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_swdevice.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic software device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_swdevice.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic software device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_swdevice.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic software device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_swdevice.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic software device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_swdevice.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic software device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "c_swdevice.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic SuperSpeed USB Hub",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard USB HUBs)",
+                                 "DriverDate":  "2026-06-17 20:00:00",
+                                 "InfName":  "usbhub3.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic USB Hub",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard USB HUBs)",
+                                 "DriverDate":  "2026-06-17 20:00:00",
+                                 "InfName":  "usbhub3.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic USB Hub",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard USB HUBs)",
+                                 "DriverDate":  "2026-06-17 20:00:00",
+                                 "InfName":  "usbhub3.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic volume shadow copy",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "volsnap.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Generic volume shadow copy",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "volsnap.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID Keyboard Device",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard keyboards)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "keyboard.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID Keyboard Device",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard keyboards)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "keyboard.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID Keyboard Device",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard keyboards)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "keyboard.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID Keyboard Device",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard keyboards)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "keyboard.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID Keyboard Device",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard keyboards)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "keyboard.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant consumer control device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "hidserv.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant consumer control device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "hidserv.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant consumer control device",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "hidserv.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant mouse",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "msmouse.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant system controller",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant vendor-defined device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant vendor-defined device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant vendor-defined device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant vendor-defined device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant vendor-defined device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "HID-compliant vendor-defined device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "High Definition Audio Bus",
+                                 "DriverVersion":  "25.30.0.1",
+                                 "DriverProviderName":  "AMD",
+                                 "Manufacturer":  "AMD",
+                                 "DriverDate":  "2025-08-20 20:00:00",
+                                 "InfName":  "oem21.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "High Definition Audio Controller",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2026-05-15 20:00:00",
+                                 "InfName":  "hdaudbus.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "High precision event timer",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel Processor",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2009-04-20 20:00:00",
+                                 "InfName":  "cpu.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel RST VMD Controller 467F",
+                                 "DriverVersion":  "20.2.6.1025",
+                                 "DriverProviderName":  "Intel Corporation",
+                                 "Manufacturer":  "Intel Corporation",
+                                 "DriverDate":  "2025-04-10 20:00:00",
+                                 "InfName":  "oem27.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel RST VMD Managed Controller 09AB",
+                                 "DriverVersion":  "20.2.6.1025",
+                                 "DriverProviderName":  "Intel Corporation",
+                                 "Manufacturer":  "Intel Corporation",
+                                 "DriverDate":  "2025-04-10 20:00:00",
+                                 "InfName":  "oem27.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel RST VMD Managed Controller 09AB",
+                                 "DriverVersion":  "20.2.6.1025",
+                                 "DriverProviderName":  "Intel Corporation",
+                                 "Manufacturer":  "Intel Corporation",
+                                 "DriverDate":  "2025-04-10 20:00:00",
+                                 "InfName":  "oem27.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) Dynamic Application Loader Host Interface",
+                                 "DriverVersion":  "1.44.2023.710",
+                                 "DriverProviderName":  "Intel",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2023-07-10 20:00:00",
+                                 "InfName":  "oem19.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) Ethernet Connection (17) I219-V",
+                                 "DriverVersion":  "12.19.1.37",
+                                 "DriverProviderName":  "Intel",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2021-06-21 20:00:00",
+                                 "InfName":  "oem54.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) iCLS Client",
+                                 "DriverVersion":  "1.71.99.0",
+                                 "DriverProviderName":  "Intel",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2023-12-05 19:00:00",
+                                 "InfName":  "oem33.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) Management Engine Interface #1",
+                                 "DriverVersion":  "2406.5.5.0",
+                                 "DriverProviderName":  "Intel",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2024-02-07 19:00:00",
+                                 "InfName":  "oem3.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) Management Engine WMI Provider",
+                                 "DriverVersion":  "2408.5.4.0",
+                                 "DriverProviderName":  "Intel",
+                                 "Manufacturer":  "Intel",
+                                 "DriverDate":  "2024-02-20 19:00:00",
+                                 "InfName":  "oem4.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) Platform Monitoring Technology Driver",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Intel(R) Platform Monitoring Technology Device",
+                                 "Manufacturer":  "Intel(R) Platform Monitoring Technology Device",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "intelpmt.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) Power Engine Plug-in",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Intel Corporation",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "intelpep.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) Serial IO GPIO Host Controller - INTC1056",
+                                 "DriverVersion":  "30.100.2531.31",
+                                 "DriverProviderName":  "Intel Corporation",
+                                 "Manufacturer":  "Intel Corporation",
+                                 "DriverDate":  "2025-07-29 20:00:00",
+                                 "InfName":  "oem42.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) Serial IO I2C Host Controller - 7ACC",
+                                 "DriverVersion":  "30.100.2531.31",
+                                 "DriverProviderName":  "Intel Corporation",
+                                 "Manufacturer":  "Intel Corporation",
+                                 "DriverDate":  "2025-07-29 20:00:00",
+                                 "InfName":  "oem43.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) UHD Graphics 770",
+                                 "DriverVersion":  "32.0.101.7088",
+                                 "DriverProviderName":  "Intel Corporation",
+                                 "Manufacturer":  "Intel Corporation",
+                                 "DriverDate":  "2026-06-16 20:00:00",
+                                 "InfName":  "oem12.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Intel(R) Wi-Fi 6E AX210 160MHz",
+                                 "DriverVersion":  "23.150.0.4",
+                                 "DriverProviderName":  "Intel",
+                                 "Manufacturer":  "Intel Corporation",
+                                 "DriverDate":  "2025-06-11 20:00:00",
+                                 "InfName":  "oem65.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Local Print Queue",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "printqueue.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Local Print Queue",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "printqueue.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Local Print Queue",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "printqueue.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Local Print Queue",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "printqueue.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Local Print Queue",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "printqueue.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft ACPI-Compliant System",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "acpi.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Basic Display Driver",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard display types)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "basicdisplay.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Basic Render Driver",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "basicrender.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Hyper-V PCI Server",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "wvpcivsp.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Hyper-V Virtual Disk Server",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "wstorvsp.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Hyper-V Virtual Machine Bus Provider",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "wvmbusr.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Hyper-V Virtualization Infrastructure Driver",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "wvid.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Hypervisor Service",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "hvservice.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft IPP Class Driver",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "prnms012.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft IPP Class Driver",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "prnms012.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Kernel Debug Network Adapter",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "kdnic.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Storage Spaces Controller",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "spaceport.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Streaming Service Proxy",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "ksfilter.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft System Management BIOS Driver",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "mssmbios.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft UEFI-Compliant System",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "uefi.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Virtual Drive Enumerator",
+                                 "DriverVersion":  "10.0.26100.1591",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "vdrvroot.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Wi-Fi Direct Virtual Adapter",
+                                 "DriverVersion":  "10.0.26100.7019",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "netvwifimp.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Wi-Fi Direct Virtual Adapter",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "netvwifimp.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Windows Management Interface for ACPI",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "wmiacpi.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Windows Management Interface for ACPI",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "wmiacpi.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Windows Management Interface for ACPI",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "wmiacpi.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Windows Management Interface for ACPI",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "wmiacpi.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Microsoft Windows Management Interface for ACPI",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "wmiacpi.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Motherboard resources",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Motherboard resources",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Motherboard resources",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Motherboard resources",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Motherboard resources",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Motherboard resources",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Motherboard resources",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Motherboard resources",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "NDIS Virtual Network Adapter Enumerator",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "ndisvirtualbus.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "PCI Device",
+                                 "DriverVersion":  "",
+                                 "DriverProviderName":  "",
+                                 "Manufacturer":  "",
+                                 "DriverDate":  "",
+                                 "InfName":  "",
+                                 "IsSigned":  false
+                             },
+                             {
+                                 "DeviceName":  "PCI Express Downstream Switch Port",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "pci.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "PCI Express Root Complex",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "pci.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "PCI Express Root Port",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "pci.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "PCI Express Root Port",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "pci.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "PCI Express Root Port",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "pci.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "PCI Express Root Port",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "pci.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "PCI Express Upstream Switch Port",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "pci.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "PCI standard host CPU bridge",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "PCI standard ISA bridge",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "PCI standard RAM Controller",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Plug and Play Software Device Enumerator",
+                                 "DriverVersion":  "10.0.26100.4202",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2025-05-22 20:00:00",
+                                 "InfName":  "swenum.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Printer Port",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard port types)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "msports.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Printer Port Logical Interface",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Programmable interrupt controller",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Realtek Asio Component",
+                                 "DriverVersion":  "1.0.13.1",
+                                 "DriverProviderName":  "Realtek",
+                                 "Manufacturer":  "Realtek",
+                                 "DriverDate":  "2024-08-27 20:00:00",
+                                 "InfName":  "oem73.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Realtek Audio Effects Component",
+                                 "DriverVersion":  "13.0.6000.1905",
+                                 "DriverProviderName":  "Realtek",
+                                 "Manufacturer":  "Realtek",
+                                 "DriverDate":  "2025-07-09 20:00:00",
+                                 "InfName":  "oem70.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Realtek Audio Universal Service",
+                                 "DriverVersion":  "1.0.901.0",
+                                 "DriverProviderName":  "Realtek",
+                                 "Manufacturer":  "Realtek",
+                                 "DriverDate":  "2025-09-15 20:00:00",
+                                 "InfName":  "oem71.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Realtek Hardware Support Application",
+                                 "DriverVersion":  "11.0.6000.377",
+                                 "DriverProviderName":  "Realtek",
+                                 "Manufacturer":  "Realtek",
+                                 "DriverDate":  "2025-09-10 20:00:00",
+                                 "InfName":  "oem72.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Realtek High Definition Audio",
+                                 "DriverVersion":  "6.0.9888.1",
+                                 "DriverProviderName":  "Realtek Semiconductor Corp.",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2025-09-15 20:00:00",
+                                 "InfName":  "oem64.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Remote Desktop Device Redirector Bus",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "rdpbus.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "SM Bus Controller",
+                                 "DriverVersion":  "",
+                                 "DriverProviderName":  "",
+                                 "Manufacturer":  "",
+                                 "DriverDate":  "",
+                                 "InfName":  "",
+                                 "IsSigned":  false
+                             },
+                             {
+                                 "DeviceName":  "System Firmware",
+                                 "DriverVersion":  "10.1.2.1620",
+                                 "DriverProviderName":  "ASUSTeK COMPUTER INC.",
+                                 "Manufacturer":  "ASUSTeK COMPUTER INC.",
+                                 "DriverDate":  "2022-08-11 20:00:00",
+                                 "InfName":  "oem67.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "System timer",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "machine.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Trusted Platform Module 2.0",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "tpm.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "UMBus Root Bus Enumerator",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "umbus.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Unknown USB Device (Device Descriptor Request Failed)",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard USB Host Controller)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "usb.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Audio Device",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2026-05-15 20:00:00",
+                                 "InfName":  "wdma_usb.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Composite Device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard USB Host Controller)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "usb.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Composite Device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard USB Host Controller)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "usb.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Composite Device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard USB Host Controller)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "usb.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Composite Device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard USB Host Controller)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "usb.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Input Device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Input Device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Input Device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Input Device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Input Device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Input Device",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard system devices)",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "input.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Mass Storage Device",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Compatible USB storage device",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "usbstor.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB Root Hub (USB 3.0)",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "(Standard USB HUBs)",
+                                 "DriverDate":  "2026-06-17 20:00:00",
+                                 "InfName":  "usbhub3.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "USB xHCI Compliant Host Controller",
+                                 "DriverVersion":  "10.0.26100.8737",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Generic USB xHCI Host Controller",
+                                 "DriverDate":  "2026-06-17 20:00:00",
+                                 "InfName":  "usbxhci.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Virtual Gamepad Emulation Bus",
+                                 "DriverVersion":  "1.16.112.0",
+                                 "DriverProviderName":  "Benjamin Hoeglinger-Stelzer",
+                                 "Manufacturer":  "Benjamin Hoeglinger-Stelzer",
+                                 "DriverDate":  "2018-10-16 20:00:00",
+                                 "InfName":  "oem80.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Voice Clarity",
+                                 "DriverVersion":  "1.0.3.56670",
+                                 "DriverProviderName":  "Microsoft Corporation",
+                                 "Manufacturer":  "Microsoft Corporation",
+                                 "DriverDate":  "2026-05-03 20:00:00",
+                                 "InfName":  "oem77.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Volume",
+                                 "DriverVersion":  "10.0.26100.5074",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "volume.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Volume",
+                                 "DriverVersion":  "10.0.26100.5074",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "volume.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Volume",
+                                 "DriverVersion":  "10.0.26100.5074",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "volume.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Volume",
+                                 "DriverVersion":  "10.0.26100.5074",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "volume.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Volume",
+                                 "DriverVersion":  "10.0.26100.5074",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "volume.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Volume",
+                                 "DriverVersion":  "10.0.26100.5074",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "volume.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "Volume Manager",
+                                 "DriverVersion":  "10.0.26100.8521",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "volmgr.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "WAN Miniport (IKEv2)",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "netavpna.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "WAN Miniport (IP)",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "netrasa.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "WAN Miniport (IPv6)",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "netrasa.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "WAN Miniport (L2TP)",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "netrasa.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "WAN Miniport (Network Monitor)",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "netrasa.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "WAN Miniport (PPPOE)",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "netrasa.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "WAN Miniport (PPTP)",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "netrasa.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "WAN Miniport (SSTP)",
+                                 "DriverVersion":  "10.0.26100.1",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "Microsoft",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "netsstpa.inf",
+                                 "IsSigned":  true
+                             },
+                             {
+                                 "DeviceName":  "WinUsb Device",
+                                 "DriverVersion":  "10.0.26100.1150",
+                                 "DriverProviderName":  "Microsoft",
+                                 "Manufacturer":  "WinUsb Device",
+                                 "DriverDate":  "2006-06-20 20:00:00",
+                                 "InfName":  "winusb.inf",
+                                 "IsSigned":  true
+                             }
+                         ],
+    "ProblemDrivers":  [
+                           {
+                               "DeviceName":  "Intel(R) Ethernet Connection (17) I219-V",
+                               "PnpClass":  "Net",
+                               "Manufacturer":  "Intel",
+                               "Service":  "e1dexpress",
+                               "Status":  "Error",
+                               "ConfigManagerErrorCode":  22
+                           },
+                           {
+                               "DeviceName":  "Microsoft Wi-Fi Direct Virtual Adapter #2",
+                               "PnpClass":  "Net",
+                               "Manufacturer":  "Microsoft",
+                               "Service":  "vwifimp",
+                               "Status":  "Error",
+                               "ConfigManagerErrorCode":  22
+                           },
+                           {
+                               "DeviceName":  "PCI Device",
+                               "PnpClass":  "",
+                               "Manufacturer":  "",
+                               "Service":  "",
+                               "Status":  "Error",
+                               "ConfigManagerErrorCode":  28
+                           },
+                           {
+                               "DeviceName":  "SM Bus Controller",
+                               "PnpClass":  "",
+                               "Manufacturer":  "",
+                               "Service":  "",
+                               "Status":  "Error",
+                               "ConfigManagerErrorCode":  28
+                           },
+                           {
+                               "DeviceName":  "Unknown USB Device (Device Descriptor Request Failed)",
+                               "PnpClass":  "USB",
+                               "Manufacturer":  "(Standard USB Host Controller)",
+                               "Service":  "",
+                               "Status":  "Error",
+                               "ConfigManagerErrorCode":  43
+                           }
+                       ]
+}

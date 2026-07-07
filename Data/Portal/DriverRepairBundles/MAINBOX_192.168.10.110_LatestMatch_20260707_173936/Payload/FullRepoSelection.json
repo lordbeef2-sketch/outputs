@@ -1,0 +1,99 @@
+{
+  "Device": {
+    "ComputerName": "MAINBOX",
+    "IpAddress": "192.168.10.110",
+    "WorkgroupName": "WORKGROUP",
+    "DomainName": "",
+    "LastLoggedInUser": "MainBox\\Main1",
+    "LastDriverPullLocal": "2026-07-07 17:04:11"
+  },
+  "RepositoryRoot": "C:\\Users\\Main1\\Documents\\Codex\\2026-07-06\\i\\outputs\\Data\\ServerDriverStore",
+  "SelectionMode": "LatestMatch",
+  "GeneratedLocal": "2026-07-07 17:39:36",
+  "SelectedPackages": [
+    {
+      "DeviceName": "Intel(R) Ethernet Connection (17) I219-V",
+      "PnpDeviceId": "PCI\\VEN_8086\u0026DEV_1A1D\u0026SUBSYS_86721043\u0026REV_11\\3\u002611583659\u00260\u0026FE",
+      "ConfigManagerErrorCode": 22,
+      "Status": "Error",
+      "MatchLane": "CompatibleId",
+      "MatchedId": "PCI\\VEN_8086\u0026DEV_1A1D",
+      "PrevalenceCount": 1,
+      "Provider": "%Intel%",
+      "DriverDateText": "06/22/2021",
+      "DriverVersionText": "12.19.1.37",
+      "RelativeInfPath": "MAINBOX_manualseed_20260707\\e1d68x64.inf_amd64_b32d0891eb98aee4\\e1d68x64.inf",
+      "BundledFolder": "Drivers\\01_Intel(R)_Ethernet_Connection_(17)_I219-V"
+    },
+    {
+      "DeviceName": "Unknown USB Device (Device Descriptor Request Failed)",
+      "PnpDeviceId": "USB\\VID_0000\u0026PID_0002\\5\u00262CF64626\u00260\u00266",
+      "ConfigManagerErrorCode": 43,
+      "Status": "Error",
+      "MatchLane": "ExactHardwareId",
+      "MatchedId": "USB\\DEVICE_DESCRIPTOR_FAILURE",
+      "PrevalenceCount": 1,
+      "Provider": "%Msft%",
+      "DriverDateText": "06/21/2006",
+      "DriverVersionText": "10.0.26100.8737",
+      "RelativeInfPath": "MAINBOX_manualseed_20260707\\usb.inf_amd64_7095c3ec54f00c81\\usb.inf",
+      "BundledFolder": "Drivers\\02_Unknown_USB_Device_(Device_Descriptor_Request_Failed)"
+    }
+  ],
+  "UnresolvedIssues": [
+    {
+      "DeviceName": "Microsoft Wi-Fi Direct Virtual Adapter #2",
+      "PnpDeviceId": "{5D624F94-8850-40C3-A3FA-A4FD2080BAF3}\\VWIFIMP_WFD\\5\u00261F8C8162\u00260\u002620",
+      "ConfigManagerErrorCode": 22,
+      "Status": "Error",
+      "HardwareIds": [
+        "{5d624f94-8850-40c3-a3fa-a4fd2080baf3}\\vwifimp_wfd"
+      ],
+      "CompatibleIds": [
+        "{5d624f94-8850-40c3-a3fa-a4fd2080baf3}\\vwifimp_wfd"
+      ]
+    },
+    {
+      "DeviceName": "PCI Device",
+      "PnpDeviceId": "PCI\\VEN_8086\u0026DEV_7AA4\u0026SUBSYS_86941043\u0026REV_11\\3\u002611583659\u00260\u0026FD",
+      "ConfigManagerErrorCode": 28,
+      "Status": "Error",
+      "HardwareIds": [
+        "PCI\\VEN_8086\u0026DEV_7AA4\u0026SUBSYS_86941043\u0026REV_11",
+        "PCI\\VEN_8086\u0026DEV_7AA4\u0026SUBSYS_86941043",
+        "PCI\\VEN_8086\u0026DEV_7AA4\u0026CC_0C8000",
+        "PCI\\VEN_8086\u0026DEV_7AA4\u0026CC_0C80"
+      ],
+      "CompatibleIds": [
+        "PCI\\VEN_8086\u0026DEV_7AA4\u0026REV_11",
+        "PCI\\VEN_8086\u0026DEV_7AA4",
+        "PCI\\VEN_8086\u0026CC_0C8000",
+        "PCI\\VEN_8086\u0026CC_0C80",
+        "PCI\\VEN_8086",
+        "PCI\\CC_0C8000",
+        "PCI\\CC_0C80"
+      ]
+    },
+    {
+      "DeviceName": "SM Bus Controller",
+      "PnpDeviceId": "PCI\\VEN_8086\u0026DEV_7AA3\u0026SUBSYS_86941043\u0026REV_11\\3\u002611583659\u00260\u0026FC",
+      "ConfigManagerErrorCode": 28,
+      "Status": "Error",
+      "HardwareIds": [
+        "PCI\\VEN_8086\u0026DEV_7AA3\u0026SUBSYS_86941043\u0026REV_11",
+        "PCI\\VEN_8086\u0026DEV_7AA3\u0026SUBSYS_86941043",
+        "PCI\\VEN_8086\u0026DEV_7AA3\u0026CC_0C0500",
+        "PCI\\VEN_8086\u0026DEV_7AA3\u0026CC_0C05"
+      ],
+      "CompatibleIds": [
+        "PCI\\VEN_8086\u0026DEV_7AA3\u0026REV_11",
+        "PCI\\VEN_8086\u0026DEV_7AA3",
+        "PCI\\VEN_8086\u0026CC_0C0500",
+        "PCI\\VEN_8086\u0026CC_0C05",
+        "PCI\\VEN_8086",
+        "PCI\\CC_0C0500",
+        "PCI\\CC_0C05"
+      ]
+    }
+  ]
+}
