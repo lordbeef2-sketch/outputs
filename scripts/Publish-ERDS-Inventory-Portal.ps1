@@ -25,9 +25,13 @@ $workspaceRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 $outputsRoot = Split-Path -Parent $PSScriptRoot
 $projectRoot = Join-Path $workspaceRoot 'work\ERDS.InventoryPortal'
 $projectFile = Join-Path $projectRoot 'ERDS.InventoryPortal.csproj'
+$workspaceDropRoot = Join-Path $env:ProgramData 'ERDSInventoryPortal\drop'
+$workspaceBundleRoot = $null
 
 if ($UseWorkspaceOutputs) {
-    $DeployOutputsRoot = $outputsRoot
+    $workspaceTimestamp = Get-Date -Format 'yyyyMMdd_HHmmss'
+    $workspaceBundleRoot = Join-Path $workspaceDropRoot ("ERDS.InventoryPortal_{0}" -f $workspaceTimestamp)
+    $DeployOutputsRoot = $workspaceBundleRoot
 }
 
 $publishRoot = Join-Path $DeployOutputsRoot 'app\ERDS.InventoryPortal'
@@ -46,10 +50,55 @@ function Sync-Directory {
         return
     }
 
+    $resolvedSource = [System.IO.Path]::GetFullPath($Source)
+    $resolvedDestination = [System.IO.Path]::GetFullPath($Destination)
+    if ($resolvedSource.TrimEnd('\') -eq $resolvedDestination.TrimEnd('\')) {
+        return
+    }
+
     New-Item -ItemType Directory -Path $Destination -Force | Out-Null
     Get-ChildItem -LiteralPath $Source -Force | ForEach-Object {
         Copy-Item -LiteralPath $_.FullName -Destination $Destination -Recurse -Force
     }
+}
+
+function Replace-Directory {
+    param(
+        [Parameter(Mandatory)]
+        [string]$Source,
+        [Parameter(Mandatory)]
+        [string]$Destination
+    )
+
+    if (-not (Test-Path -LiteralPath $Source)) {
+        return
+    }
+
+    $resolvedSource = [System.IO.Path]::GetFullPath($Source)
+    $resolvedDestination = [System.IO.Path]::GetFullPath($Destination)
+    if ($resolvedSource.TrimEnd('\') -eq $resolvedDestination.TrimEnd('\')) {
+        return
+    }
+
+    $parentPath = Split-Path -Parent $Destination
+    $leafName = Split-Path -Leaf $Destination
+    $incomingPath = Join-Path $parentPath ($leafName + '.incoming')
+    $backupPath = Join-Path $parentPath ($leafName + '.backup')
+
+    Remove-Item -LiteralPath $incomingPath -Recurse -Force -ErrorAction SilentlyContinue
+    Remove-Item -LiteralPath $backupPath -Recurse -Force -ErrorAction SilentlyContinue
+
+    New-Item -ItemType Directory -Path $incomingPath -Force | Out-Null
+    Get-ChildItem -LiteralPath $Source -Force | ForEach-Object {
+        Copy-Item -LiteralPath $_.FullName -Destination $incomingPath -Recurse -Force
+    }
+
+    if (Test-Path -LiteralPath $Destination) {
+        Move-Item -LiteralPath $Destination -Destination $backupPath -Force
+    }
+
+    Move-Item -LiteralPath $incomingPath -Destination $Destination -Force
+    Remove-Item -LiteralPath $backupPath -Recurse -Force -ErrorAction SilentlyContinue
 }
 
 function Seed-Directory {
@@ -61,6 +110,12 @@ function Seed-Directory {
     )
 
     if (-not (Test-Path -LiteralPath $Source)) {
+        return
+    }
+
+    $resolvedSource = [System.IO.Path]::GetFullPath($Source)
+    $resolvedDestination = [System.IO.Path]::GetFullPath($Destination)
+    if ($resolvedSource.TrimEnd('\') -eq $resolvedDestination.TrimEnd('\')) {
         return
     }
 
@@ -113,7 +168,7 @@ try {
                 '-o', $stagingRoot
             )
             $publishMode = 'SelfContained'
-            Sync-Directory -Source $stagingRoot -Destination $publishRoot
+            Replace-Directory -Source $stagingRoot -Destination $publishRoot
         } catch {
             $publishErrors += $_.Exception.Message
         }
@@ -127,7 +182,7 @@ try {
             '/p:UseAppHost=true',
             '-o', $stagingRoot
         )
-        Sync-Directory -Source $stagingRoot -Destination $publishRoot
+        Replace-Directory -Source $stagingRoot -Destination $publishRoot
     }
 } finally {
     if ($stagingRoot -and (Test-Path -LiteralPath $stagingRoot)) {
@@ -141,6 +196,17 @@ if (-not (Test-Path -LiteralPath $exePath)) {
     throw "Published EXE not found: $exePath"
 }
 
+if ($UseWorkspaceOutputs) {
+    New-Item -ItemType Directory -Path $workspaceDropRoot -Force | Out-Null
+    $latestPointerPath = Join-Path $workspaceDropRoot 'LATEST.txt'
+    @(
+        "GeneratedLocal=$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))"
+        "BundleRoot=$DeployOutputsRoot"
+        "PublishRoot=$publishRoot"
+        "Executable=$exePath"
+    ) | Set-Content -Path $latestPointerPath -Encoding UTF8
+}
+
 [pscustomobject]@{
     PublishedAt        = (Get-Date).ToString('yyyy-MM-dd HH:mm:ss')
     RuntimeIdentifier  = $RuntimeIdentifier
@@ -149,6 +215,7 @@ if (-not (Test-Path -LiteralPath $exePath)) {
     DeployOutputsRoot  = $DeployOutputsRoot
     PublishRoot        = $publishRoot
     Executable         = $exePath
+    WorkspaceDropRoot  = if ($UseWorkspaceOutputs) { $workspaceDropRoot } else { '' }
     FileCount          = (Get-ChildItem -LiteralPath $publishRoot -File -Recurse | Measure-Object).Count
     Notes              = if ($publishMode -eq 'SelfContained') { 'No separate .NET runtime should be required on the host.' } else { '.NET runtime is still required on the host, but the source project and SDK are not.' }
     SelfContainedError = if ($publishErrors.Count -gt 0) { ($publishErrors -join ' | ') } else { '' }

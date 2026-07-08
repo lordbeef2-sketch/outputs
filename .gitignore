@@ -1,1 +1,5 @@
 Data/Portal/Config/inventory-state.json
+Data/Portal/Exports/_*.zip
+app/*.backup/
+app/*.incoming/
+drop/
