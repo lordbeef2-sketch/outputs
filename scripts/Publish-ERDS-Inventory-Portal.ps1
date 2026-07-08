@@ -52,6 +52,27 @@ function Sync-Directory {
     }
 }
 
+function Seed-Directory {
+    param(
+        [Parameter(Mandatory)]
+        [string]$Source,
+        [Parameter(Mandatory)]
+        [string]$Destination
+    )
+
+    if (-not (Test-Path -LiteralPath $Source)) {
+        return
+    }
+
+    New-Item -ItemType Directory -Path $Destination -Force | Out-Null
+    Get-ChildItem -LiteralPath $Source -Force | ForEach-Object {
+        $destinationPath = Join-Path $Destination $_.Name
+        if (-not (Test-Path -LiteralPath $destinationPath)) {
+            Copy-Item -LiteralPath $_.FullName -Destination $Destination -Recurse -Force
+        }
+    }
+}
+
 function Invoke-DotnetPublish {
     param(
         [Parameter(Mandatory)]
@@ -71,7 +92,7 @@ if (-not (Test-Path -LiteralPath $projectFile)) {
 New-Item -ItemType Directory -Path $DeployOutputsRoot -Force | Out-Null
 New-Item -ItemType Directory -Path $publishRoot -Force | Out-Null
 Sync-Directory -Source (Join-Path $outputsRoot 'scripts') -Destination $deployScriptsRoot
-Sync-Directory -Source (Join-Path $outputsRoot 'Data') -Destination $deployDataRoot
+Seed-Directory -Source (Join-Path $outputsRoot 'Data') -Destination $deployDataRoot
 
 Push-Location $projectRoot
 try {
