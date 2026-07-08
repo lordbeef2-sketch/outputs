@@ -24,11 +24,13 @@ param(
     [string]$UserName = 'ERDS-Admin',
     [securestring]$Password,
     [string[]]$AllowedScannerIPs,
-    [string]$Description = 'Approved local admin account for inventory scanning'
+    [string]$Description = 'ERDS local admin for inventory scan'
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+
+$MaxLocalUserDescriptionLength = 48
 
 function Assert-Elevated {
     $currentIdentity = [Security.Principal.WindowsIdentity]::GetCurrent()
@@ -115,6 +117,13 @@ function Ensure-LocalUser {
         [Parameter(Mandatory)]
         [string]$AccountDescription
     )
+
+    if ([string]::IsNullOrWhiteSpace($AccountDescription)) {
+        $AccountDescription = 'ERDS local admin'
+    } elseif ($AccountDescription.Length -gt $MaxLocalUserDescriptionLength) {
+        Write-Warning "Account description exceeded $MaxLocalUserDescriptionLength characters and was truncated."
+        $AccountDescription = $AccountDescription.Substring(0, $MaxLocalUserDescriptionLength)
+    }
 
     $existing = Get-LocalUser -Name $Name -ErrorAction SilentlyContinue
     if ($existing) {
