@@ -8,6 +8,7 @@ This script is meant to be run locally on a single approved endpoint in an eleva
   - Creates or updates one approved local account (defaults to ERDS-Admin)
   - Ensures the account is enabled
   - Adds the account to the local Administrators group
+  - Changes active Public network profiles to Private
   - Enables PowerShell remoting / WinRM
   - Optionally restricts WinRM firewall rules to specific scanner IP addresses
 
@@ -174,6 +175,28 @@ function Enable-InventoryRemoting {
     return 'WinRM firewall rules left at their existing profile scope because no scanner IP list was supplied.'
 }
 
+function Set-ActiveNetworkProfilesPrivate {
+    $profiles = @(Get-NetConnectionProfile -ErrorAction Stop)
+    $updatedProfiles = New-Object System.Collections.Generic.List[string]
+
+    foreach ($profile in $profiles) {
+        if ($profile.IPv4Connectivity -eq 'Disconnected' -and $profile.IPv6Connectivity -eq 'Disconnected') {
+            continue
+        }
+
+        if ($profile.NetworkCategory -eq 'Public') {
+            Set-NetConnectionProfile -InterfaceIndex $profile.InterfaceIndex -NetworkCategory Private -ErrorAction Stop
+            $updatedProfiles.Add($profile.Name)
+        }
+    }
+
+    if ($updatedProfiles.Count -eq 0) {
+        return 'No active Public network profiles needed changing.'
+    }
+
+    return "Changed active network profile(s) to Private: $($updatedProfiles -join ', ')"
+}
+
 Assert-Elevated
 Assert-64BitPowerShell
 
@@ -193,6 +216,7 @@ if (-not $PSBoundParameters.ContainsKey('AllowedScannerIPs')) {
 $normalizedScannerIPs = Get-NormalizedIPv4List -Values $AllowedScannerIPs
 $accountAction = Ensure-LocalUser -Name $UserName -SecurePassword $Password -AccountDescription $Description
 $addedToAdmins = Ensure-AdministratorsMembership -Name $UserName
+$networkProfileMessage = Set-ActiveNetworkProfilesPrivate
 $firewallMessage = Enable-InventoryRemoting -ScannerIPs $normalizedScannerIPs
 $wsmanCheck = Test-WSMan -ComputerName localhost
 
@@ -202,6 +226,7 @@ $wsmanCheck = Test-WSMan -ComputerName localhost
     AccountName           = $UserName
     AccountAction         = $accountAction
     AddedToAdministrators = $addedToAdmins
+    NetworkProfileAction  = $networkProfileMessage
     WinRMServiceStatus    = (Get-Service -Name WinRM).Status
     WinRMStartupType      = (Get-CimInstance -ClassName Win32_Service -Filter "Name='WinRM'").StartMode
     AllowedScannerIPs     = if ($normalizedScannerIPs.Count -gt 0) { $normalizedScannerIPs -join ', ' } else { '' }
