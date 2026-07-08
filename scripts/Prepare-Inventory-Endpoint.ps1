@@ -163,6 +163,8 @@ function Enable-InventoryRemoting {
         [string[]]$ScannerIPs
     )
 
+    $ScannerIPs = @($ScannerIPs | Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
+
     Enable-PSRemoting -Force -SkipNetworkProfileCheck
     Set-Service -Name WinRM -StartupType Automatic
     if ((Get-Service -Name WinRM).Status -ne 'Running') {
@@ -174,7 +176,7 @@ function Enable-InventoryRemoting {
         Enable-NetFirewallRule -Name $rule.Name | Out-Null
     }
 
-    if ($ScannerIPs.Count -gt 0) {
+    if (@($ScannerIPs).Count -gt 0) {
         foreach ($rule in $rules) {
             Set-NetFirewallRule -Name $rule.Name -RemoteAddress $ScannerIPs | Out-Null
         }
@@ -222,7 +224,7 @@ if (-not $PSBoundParameters.ContainsKey('AllowedScannerIPs')) {
     }
 }
 
-$normalizedScannerIPs = Get-NormalizedIPv4List -Values $AllowedScannerIPs
+$normalizedScannerIPs = @(Get-NormalizedIPv4List -Values $AllowedScannerIPs)
 $accountAction = Ensure-LocalUser -Name $UserName -SecurePassword $Password -AccountDescription $Description
 $addedToAdmins = Ensure-AdministratorsMembership -Name $UserName
 $networkProfileMessage = Set-ActiveNetworkProfilesPrivate
@@ -238,7 +240,7 @@ $wsmanCheck = Test-WSMan -ComputerName localhost
     NetworkProfileAction  = $networkProfileMessage
     WinRMServiceStatus    = (Get-Service -Name WinRM).Status
     WinRMStartupType      = (Get-CimInstance -ClassName Win32_Service -Filter "Name='WinRM'").StartMode
-    AllowedScannerIPs     = if ($normalizedScannerIPs.Count -gt 0) { $normalizedScannerIPs -join ', ' } else { '' }
+    AllowedScannerIPs     = if (@($normalizedScannerIPs).Count -gt 0) { $normalizedScannerIPs -join ', ' } else { '' }
     FirewallScope         = $firewallMessage
     WSManProtocolVersion  = $wsmanCheck.ProductVersion
 } | Format-List
