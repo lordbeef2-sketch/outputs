@@ -10,7 +10,9 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::UTF8
 
-$ConnectTimeoutMs = 1200
+$PingTimeoutMs = 350
+$PingAttempts = 2
+$DiscoveryConcurrency = 32
 
 $StandardSoftwareNamePatterns = @(
     '^Update for ',
@@ -106,36 +108,103 @@ function Test-HostReachable {
         DiscoveryMethod = ''
     }
 
-    $ping = [Net.NetworkInformation.Ping]::new()
-    try {
-        $reply = $ping.Send($IPAddress, $ConnectTimeoutMs)
-        if ($reply.Status -eq [Net.NetworkInformation.IPStatus]::Success) {
-            $result.Found = $true
-            $result.DiscoveryMethod = 'ICMP'
-            return [pscustomobject]$result
-        }
-    } catch {
-    } finally {
-        $ping.Dispose()
-    }
-
-    foreach ($port in 135, 445) {
-        $client = [Net.Sockets.TcpClient]::new()
+    for ($attempt = 1; $attempt -le $PingAttempts; $attempt++) {
+        $ping = [Net.NetworkInformation.Ping]::new()
         try {
-            $async = $client.BeginConnect($IPAddress, $port, $null, $null)
-            if ($async.AsyncWaitHandle.WaitOne($ConnectTimeoutMs) -and $client.Connected) {
-                $client.EndConnect($async) | Out-Null
+            $reply = $ping.Send($IPAddress, $PingTimeoutMs)
+            if ($reply.Status -eq [Net.NetworkInformation.IPStatus]::Success) {
                 $result.Found = $true
-                $result.DiscoveryMethod = "TCP:$port"
+                $result.DiscoveryMethod = 'ICMP'
                 return [pscustomobject]$result
             }
         } catch {
         } finally {
-            $client.Dispose()
+            $ping.Dispose()
         }
     }
 
     return [pscustomobject]$result
+}
+
+function Invoke-PingSweepBatch {
+    param(
+        [Parameter(Mandatory)]
+        [string[]]$IPAddresses
+    )
+
+    $pending = New-Object System.Collections.Generic.List[object]
+
+    foreach ($ipAddress in $IPAddresses) {
+        $ping = [Net.NetworkInformation.Ping]::new()
+        $task = $ping.SendPingAsync($ipAddress, $PingTimeoutMs)
+        $pending.Add([pscustomobject]@{
+                IPAddress = $ipAddress
+                Ping      = $ping
+                Task      = $task
+            })
+    }
+
+    [Threading.Tasks.Task]::WaitAll(@($pending | ForEach-Object { $_.Task }))
+
+    $results = foreach ($item in $pending) {
+        try {
+            $reply = $item.Task.GetAwaiter().GetResult()
+            [pscustomobject]@{
+                IPAddress = $item.IPAddress
+                Found     = ($reply.Status -eq [Net.NetworkInformation.IPStatus]::Success)
+            }
+        } catch {
+            [pscustomobject]@{
+                IPAddress = $item.IPAddress
+                Found     = $false
+            }
+        } finally {
+            $item.Ping.Dispose()
+        }
+    }
+
+    return @($results)
+}
+
+function Get-ReachableTargets {
+    param(
+        [Parameter(Mandatory)]
+        [string[]]$IPAddresses
+    )
+
+    $reachableByIp = @{}
+    $remaining = @($IPAddresses | Where-Object { -not [string]::IsNullOrWhiteSpace($_) })
+
+    for ($attempt = 1; $attempt -le $PingAttempts -and $remaining.Count -gt 0; $attempt++) {
+        $nextRemaining = New-Object System.Collections.Generic.List[string]
+
+        for ($offset = 0; $offset -lt $remaining.Count; $offset += $DiscoveryConcurrency) {
+            $batch = @($remaining[$offset..([Math]::Min($offset + $DiscoveryConcurrency - 1, $remaining.Count - 1))])
+            foreach ($result in Invoke-PingSweepBatch -IPAddresses $batch) {
+                if ($result.Found) {
+                    $reachableByIp[$result.IPAddress] = [pscustomobject]@{
+                        Found           = $true
+                        DiscoveryMethod = 'ICMP'
+                    }
+                } else {
+                    $nextRemaining.Add($result.IPAddress)
+                }
+            }
+        }
+
+        $remaining = @($nextRemaining)
+    }
+
+    $reachable = foreach ($ipAddress in $IPAddresses) {
+        if ($reachableByIp.ContainsKey($ipAddress)) {
+            [pscustomobject]@{
+                IPAddress        = $ipAddress
+                ReachabilityInfo = $reachableByIp[$ipAddress]
+            }
+        }
+    }
+
+    return @($reachable)
 }
 
 function New-RemoteCimSession {
@@ -689,11 +758,12 @@ New-Item -ItemType Directory -Path $SnapshotRoot -Force | Out-Null
 $results = New-Object System.Collections.Generic.List[object]
 $cachedCredential = $null
 $credentialLoaded = $false
-foreach ($ipAddress in ($IpAddresses -split ',' | ForEach-Object { $_.Trim() } | Where-Object { $_ })) {
-    $reachable = Test-HostReachable -IPAddress $ipAddress
-    if (-not $reachable.Found) {
-        continue
-    }
+$targetIpAddresses = @($IpAddresses -split ',' | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+$reachableTargets = @(Get-ReachableTargets -IPAddresses $targetIpAddresses)
+
+foreach ($target in $reachableTargets) {
+    $ipAddress = $target.IPAddress
+    $reachable = $target.ReachabilityInfo
 
     try {
         $credential = $null
